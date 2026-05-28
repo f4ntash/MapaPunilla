@@ -1,0 +1,17 @@
+{
+  "name": "Mapa Punilla",
+  "short_name": "Mapa Punilla",
+  "description": "Agencia digital para negocios turísticos en Carlos Paz y el Valle de Punilla",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#059669",
+  "lang": "es-AR",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
