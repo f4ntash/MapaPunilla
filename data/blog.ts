@@ -17,7 +17,7 @@ export const blogArticles: BlogArticle[] = [
     description:
       "Guía práctica para que hoteles, cabañas y restaurantes del Valle de Punilla aparezcan en Google Maps y atraigan más clientes sin pagar publicidad.",
     content: [
-      "Si tenés un hotel, cabañas o un restaurante en Villa Carlos Paz, Cosquín o La Falda, ya sabés que la mayoría de los turistas busca dónde ir directamente en Google Maps. Lo que quizás no sabés es que hay pasos concretos para que tu negocio aparezca primero, sin necesidad de pagar publicidad.",
+      "Si tenés un hotel, cabañas o un restaurante en Villa Carlos Paz, Cosquín o La Falda, ya sabés que la mayoría de los turistas busca dónde ir directamente en Google Maps. Lo que quizás no sabés es que hay pasos concretos para que tu negocio se vea más claro, confiable y fácil de contactar, sin depender solo de publicidad.",
       "El primer paso es tener tu perfil de Google Business Profile completo y verificado. No alcanza con tenerlo creado: necesitás categorías correctas, fotos de calidad, horarios actualizados y reseñas que generen confianza.",
       "Google usa tres factores principales para decidir qué negocios mostrar: cercanía, relevancia y prominencia. La cercanía no la podés cambiar (depende de dónde esté el turista), pero la relevancia y la prominencia sí se pueden mejorar.",
       "Para mejorar la relevancia, tu perfil debe tener palabras clave que los turistas buscan. Por ejemplo, si tenés cabañas en Carlos Paz, tu perfil debería incluir términos como 'cabañas en Carlos Paz con pileta' o 'alojamiento cerca del centro'. No es repetir palabras sin sentido, es describir exactamente lo que ofrecés.",

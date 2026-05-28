@@ -169,9 +169,9 @@ const jsonLd = {
       "@type": "Service",
       "@id": `${config.site.url}/#service`,
       provider: { "@id": `${config.site.url}/#organization` },
-      name: "Optimización Google Maps para negocios turísticos",
+      name: "Marketing digital para negocios turisticos en Punilla",
       description:
-        "Optimizamos tu perfil de Google Business Profile para que aparezcas primero en las búsquedas locales de Punilla.",
+        "Mejoramos Google Maps, paginas web, WhatsApp y SEO local para que negocios turisticos de Punilla reciban mas consultas y reservas.",
       areaServed: config.zones,
       category: "Marketing digital",
       audience: { "@type": "Audience", audienceType: "Negocios turísticos" },
@@ -182,7 +182,7 @@ const jsonLd = {
       provider: { "@id": `${config.site.url}/#organization` },
       name: "SEO Local para el Valle de Punilla",
       description:
-        "Posicionamos tu negocio turístico en los primeros resultados de Google para búsquedas locales.",
+        "Trabajamos la presencia local de cabanas, hoteles, restaurantes y emprendimientos turisticos para mejorar su visibilidad en busquedas de Google.",
       areaServed: config.zones,
       category: "SEO",
       audience: { "@type": "Audience", audienceType: "Negocios turísticos" },

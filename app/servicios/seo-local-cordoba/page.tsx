@@ -2,78 +2,70 @@ import type { Metadata } from "next"
 import { buildMetadata } from "@/lib/seo"
 import { SeoLandingPage } from "@/components/services/seo-landing"
 
-const meta = {
-  title: "SEO Local para negocios turísticos en Córdoba",
+export const metadata: Metadata = buildMetadata({
+  title: "SEO Local para negocios turisticos en Punilla y Cordoba",
   description:
-    "Posicioná tu negocio turístico en Google para toda Córdoba y Punilla. Aparecé primero en búsquedas locales sin pagar publicidad.",
+    "SEO local para cabanas, hoteles, restaurantes y emprendimientos turisticos de Punilla. Mejor visibilidad en Google sin promesas falsas.",
   path: "/servicios/seo-local-cordoba",
   keywords: [
-    "seo local cordoba",
-    "posicionamiento web cordoba",
-    "seo turismo cordoba",
-    "marketing digital cordoba",
-    "seo para hoteles cordoba",
-    "posicionamiento google cordoba",
+    "seo local punilla",
+    "marketing turistico Punilla",
+    "seo para hoteles Cordoba",
+    "marketing para restaurantes en Punilla",
+    "paginas web para cabanas",
   ],
-}
-
-export const metadata: Metadata = buildMetadata(meta)
+})
 
 export default function Page() {
   return (
     <SeoLandingPage
-      title="SEO Local para negocios turísticos en Córdoba"
-      subtitle="Aparecé en Google cuando los turistas te busquen"
-      heroDescription="El 86% de los turistas busca en Google antes de elegir. Con SEO local, tu negocio aparece primero en las búsquedas de Córdoba y el Valle de Punilla. Sin pagar por clic, sin publicidad."
-      problem="Los turistas buscan 'cabañas en Carlos Paz', 'restaurantes en Cosquín' o 'hoteles en La Falda'. Si tu web no está optimizada para esas búsquedas, tus competidores aparecen primero y se llevan los clientes."
-      solution="Aplicamos una estrategia completa de SEO local: optimización técnica de tu sitio web, creación de contenido local, generación de reseñas, presencia en directorios y construcción de enlaces locales. Resultados sostenibles en el tiempo."
+      title="SEO Local para negocios turisticos en Punilla"
+      subtitle="Mejor presencia cuando turistas buscan donde dormir, comer o visitar"
+      heroDescription="Trabajamos contenidos, estructura tecnica, Google Business y mensajes locales para que Google entienda mejor que ofrece tu negocio y en que zona trabaja."
+      problem="Los turistas buscan cabanas en Carlos Paz, restaurantes en Cosquin u hoteles en La Falda. Si tu web y tu perfil no explican bien tu servicio, perdes oportunidades de consulta."
+      solution="Aplicamos SEO local realista: orden tecnico, contenido local, mejoras en Google Business, resenas y paginas claras orientadas a consultas."
       sections={[
         {
-          title: "¿Qué incluye el SEO local?",
+          title: "Que incluye el SEO local",
           items: [
-            "Auditoría técnica de tu sitio web",
-            "Optimización de contenido con palabras clave locales",
-            "Creación y optimización de Google Business Profile",
-            "Gestión de reseñas en Google y otros portales",
-            "Presencia en directorios turísticos de Córdoba",
-            "Reportes mensuales de posicionamiento",
+            "Revision tecnica de tu web",
+            "Contenido con busquedas locales naturales",
+            "Mejora de Google Business Profile",
+            "Estructura para servicios y localidades",
+            "Recomendaciones de resenas y confianza",
+            "Reporte simple de avances",
           ],
         },
         {
-          title: "Resultados que podés esperar",
+          title: "Resultados que buscamos",
           items: [
-            "Primeras posiciones en búsquedas locales de tu rubro",
-            "Más tráfico a tu sitio web desde Google",
-            "Más consultas por WhatsApp y teléfono",
-            "Más reservas directas sin comisiones",
-            "Menor dependencia de plataformas terceras",
-            "Visibilidad constante sin pagar por clic",
+            "Mas visibilidad en busquedas relevantes",
+            "Mas visitas con intencion de consulta",
+            "Mas mensajes por WhatsApp y telefono",
+            "Mejor confianza antes de reservar",
+            "Menos dependencia de publicaciones sueltas",
+            "Presencia digital mas estable",
           ],
         },
       ]}
       faqs={[
         {
-          question: "¿Cuánto tarda el SEO local en dar resultados?",
+          question: "Cuanto tarda el SEO local?",
           answer:
-            "Los primeros resultados se ven entre 30 y 90 días. El SEO es una inversión a mediano plazo, pero los resultados son sostenibles y no requieren pagar por cada visita.",
+            "Depende de la competencia y del estado actual del sitio. Es un trabajo progresivo: primero ordenamos lo basico y luego medimos avances.",
         },
         {
-          question: "¿Es mejor que Google Ads?",
+          question: "Es mejor que publicidad?",
           answer:
-            "Son complementarios. El SEO local te da visibilidad constante sin costo por clic. Google Ads te da resultados inmediatos pero pagás por cada visita. Lo ideal es tener ambos.",
-        },
-        {
-          question: "¿Trabajan con negocios de toda Córdoba?",
-          answer:
-            "Sí. Nuestra especialidad es el Valle de Punilla, pero trabajamos con negocios turísticos de toda la provincia de Córdoba.",
+            "Son herramientas distintas. La publicidad puede acelerar consultas; el SEO local construye presencia mas estable. Muchas veces conviene combinarlas.",
         },
       ]}
       breadcrumbItems={[
         { name: "Inicio", path: "/" },
         { name: "Servicios", path: "/servicios" },
-        { name: "SEO Local Córdoba", path: "/servicios/seo-local-cordoba" },
+        { name: "SEO Local Punilla", path: "/servicios/seo-local-cordoba" },
       ]}
-      zoneName="Córdoba"
+      zoneName="Valle de Punilla"
     />
   )
 }

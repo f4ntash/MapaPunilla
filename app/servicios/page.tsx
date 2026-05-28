@@ -5,16 +5,16 @@ import { ServicesGrid } from "@/components/services/services-grid"
 import { ServicesCTA } from "@/components/services/services-cta"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Servicios de marketing digital para Punilla",
+  title: "Servicios de marketing turistico y SEO local en Punilla",
   description:
-    "Optimización en Google Maps, SEO Local, WhatsApp Business, páginas de reservas y más para hoteles, cabañas y restaurantes del Valle de Punilla.",
+    "Marketing turistico para cabanas, hoteles, restaurantes y negocios locales del Valle de Punilla: Google Maps, SEO local, paginas web, WhatsApp y publicidad.",
   path: "/servicios",
   keywords: [
     "servicios marketing punilla",
-    "google maps negocios",
-    "seo local turismo",
+    "marketing turistico Punilla",
+    "seo local Punilla",
     "whatsapp business hoteles",
-    "reservas directas cabañas",
+    "paginas web para cabanas",
     "publicidad google punilla",
   ],
 })

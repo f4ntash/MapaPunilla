@@ -46,7 +46,6 @@ export function Testimonials() {
             key={current}
             className="bg-white border border-stone-200 p-6 md:p-10 shadow-xs transition-opacity duration-300"
             role="group"
-            aria-roledescription="testimonio"
             aria-label={`Testimonio ${current + 1} de ${testimonials.length}`}
           >
             <div className="flex gap-1 mb-4 md:mb-6" aria-label={`${t.rating} de 5 estrellas`}>
@@ -86,7 +85,7 @@ export function Testimonials() {
           >
             <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" aria-hidden="true" />
           </button>
-          <div className="flex gap-2" role="tablist" aria-label="Seleccionar testimonio">
+          <div className="flex gap-2" aria-label="Seleccionar testimonio">
             {testimonials.map((_, i) => (
               <button
                 key={i}
@@ -97,8 +96,7 @@ export function Testimonials() {
                     ? "bg-emerald-600 w-6"
                     : "bg-stone-300 w-2 hover:bg-stone-400"
                 )}
-                role="tab"
-                aria-selected={i === current}
+                aria-current={i === current ? "true" : undefined}
                 aria-label={`Ir al testimonio ${i + 1}`}
               />
             ))}

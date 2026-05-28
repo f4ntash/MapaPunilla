@@ -17,13 +17,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           "rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500",
           "disabled:pointer-events-none disabled:opacity-50 select-none",
           {
-            "bg-emerald-600 text-white hover:bg-emerald-700 active:bg-emerald-800 shadow-sm":
+            "bg-green-800 text-white hover:bg-green-900 active:bg-stone-950 shadow-sm":
               variant === "primary",
-            "border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-50 active:bg-emerald-100 bg-white":
+            "border-2 border-green-800 text-green-900 hover:bg-amber-50 active:bg-amber-100 bg-white":
               variant === "outline",
-            "text-emerald-700 hover:bg-emerald-50 active:bg-emerald-100":
+            "text-green-900 hover:bg-amber-50 active:bg-amber-100":
               variant === "ghost",
-            "bg-green-600 text-white hover:bg-green-700 active:bg-green-800 shadow-sm":
+            "bg-green-800 text-white hover:bg-green-900 active:bg-stone-950 shadow-sm border border-green-800":
               variant === "whatsapp",
             "h-9 px-4 text-sm": size === "sm",
             "h-11 px-6 text-sm": size === "md",

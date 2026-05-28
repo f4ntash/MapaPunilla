@@ -89,7 +89,7 @@ export function SeoLandingPage({
                 href={config.whatsapp.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center h-12 md:h-13 px-6 md:px-8 text-base font-medium rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 active:bg-emerald-800 shadow-sm transition-all duration-200"
+                className="inline-flex items-center justify-center h-12 md:h-13 px-6 md:px-8 text-base font-medium rounded-xl bg-green-800 text-white hover:bg-green-900 active:bg-stone-950 shadow-sm transition-all duration-200"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Consultanos gratis
@@ -200,7 +200,7 @@ export function SeoLandingPage({
             href={config.whatsapp.link("Hola! Quiero información sobre " + title)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center h-12 md:h-14 px-8 text-base font-medium rounded-xl bg-green-600 text-white hover:bg-green-700 active:bg-green-800 shadow-sm transition-all duration-200"
+          className="inline-flex items-center justify-center h-12 md:h-14 px-8 text-base font-medium rounded-xl bg-green-800 text-white hover:bg-green-900 active:bg-stone-950 shadow-sm transition-all duration-200"
           >
             <MessageCircle className="w-5 h-5 mr-2" />
             Escribinos ahora

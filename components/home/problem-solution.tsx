@@ -144,6 +144,19 @@ export function ProblemSolution() {
           ))}
         </div>
       </div>
+
+      <div className="mt-6 grid gap-4 md:grid-cols-3">
+        {[
+          ["1. Miramos tu negocio", "Revisamos Google, web, redes, WhatsApp, fotos y competencia local."],
+          ["2. Priorizamos lo importante", "Te decimos que conviene hacer primero segun tu rubro y temporada."],
+          ["3. Ejecutamos y medimos", "Aplicamos mejoras y seguimos consultas, reservas y caminos de contacto."],
+        ].map(([title, text]) => (
+          <div key={title} className="rounded-2xl bg-[#fffaf0] border border-amber-200 p-5">
+            <h3 className="font-bold text-stone-900">{title}</h3>
+            <p className="text-sm text-stone-700 mt-2">{text}</p>
+          </div>
+        ))}
+      </div>
     </SectionWrapper>
   )
 }

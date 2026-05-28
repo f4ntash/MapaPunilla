@@ -65,7 +65,7 @@ export default function Page() {
         {
           question: "¿Cuánto cuesta la página?",
           answer:
-            "Tenemos planes desde $35.000/mes que incluyen la web, el sistema de reservas y soporte. Consultá nuestra página de precios para más detalles.",
+            "Tenemos planes desde $49.000/mes que incluyen presencia digital, mejoras de contacto y soporte. Consultá nuestra página de precios para más detalles.",
         },
       ]}
       breadcrumbItems={[

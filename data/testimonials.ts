@@ -55,7 +55,7 @@ export const testimonials: Testimonial[] = [
     role: "Propietaria",
     business: "Complejo Las Vertientes, Carlos Paz",
     content:
-      "Vino un asesor a visitarnos, vio el complejo, nos explicó todo simple. Ahora aparecemos primeros en Google, tenemos avisos que atraen gente y las reseñas no paran de llegar. Recomiendo totalmente.",
+      "Vino un asesor a visitarnos, vio el complejo y nos explicó todo simple. Ahora nuestra presencia en Google se ve mucho mejor, llegan más consultas y las reseñas no paran de crecer. Recomiendo totalmente.",
     rating: 5,
     avatar: "VS",
   },

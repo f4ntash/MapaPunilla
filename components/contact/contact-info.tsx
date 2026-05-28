@@ -75,7 +75,7 @@ export function ContactInfo() {
         <h3 className="font-bold text-base md:text-lg mb-2">
           Diagnostico gratis
         </h3>
-        <p className="text-sm text-emerald-200 mb-4">
+        <p className="text-sm text-white/90 mb-4">
           Contanos tu rubro y localidad. Te respondemos con una mirada simple sobre que mejorar primero.
         </p>
         <a

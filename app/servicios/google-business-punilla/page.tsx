@@ -2,70 +2,62 @@ import type { Metadata } from "next"
 import { buildMetadata } from "@/lib/seo"
 import { SeoLandingPage } from "@/components/services/seo-landing"
 
-const meta = {
-  title: "Google Business Profile para el Valle de Punilla",
+export const metadata: Metadata = buildMetadata({
+  title: "Google Business Profile para negocios del Valle de Punilla",
   description:
-    "Optimizá tu perfil de Google Business para todo el Valle de Punilla: Cosquín, La Falda, Tanti, Capilla del Monte. Más visibilidad, más clientes.",
+    "Optimizacion de Google Business para negocios turisticos en Cosquin, La Falda, Tanti, Capilla del Monte y todo Punilla.",
   path: "/servicios/google-business-punilla",
   keywords: [
     "google business punilla",
-    "google business cosquín",
-    "google my business la falda",
-    "google business tanti",
-    "google business capilla del monte",
-    "perfil google maps punilla",
+    "google business cosquin",
+    "google business la falda",
+    "marketing digital Punilla",
+    "negocios turisticos en Punilla",
   ],
-}
-
-export const metadata: Metadata = buildMetadata(meta)
+})
 
 export default function Page() {
   return (
     <SeoLandingPage
       title="Google Business Profile para el Valle de Punilla"
-      subtitle="Tu negocio visible en todos los pueblos de Punilla"
-      heroDescription="Cosquín, La Falda, Tanti, Capilla del Monte... cada pueblo de Punilla recibe turistas que buscan en Google Maps. Optimizamos tu perfil de Google Business para que aparezcas en cada búsqueda local de la región."
-      problem="Los turistas no solo buscan en Carlos Paz. También buscan alojamiento en Cosquín, restaurantes en La Falda, actividades en Capilla del Monte. Si tu perfil de Google Business no está optimizado para cada localidad, perdés clientes en todo el valle."
-      solution="Optimizamos tu perfil de Google Business Profile con información precisa para cada localidad de Punilla. Categorías correctas, fotos profesionales, reseñas gestionadas y palabras clave locales para que aparezcas en todo el valle."
+      subtitle="Una ficha mas clara para que turistas y vecinos confien antes de escribir"
+      heroDescription="Cosquin, La Falda, Tanti, Capilla del Monte, Bialet Masse y Santa Maria de Punilla reciben turistas que buscan en Maps. Tu perfil necesita explicar bien que ofreces y como contactarte."
+      problem="Si tu ficha esta incompleta, con fotos flojas o sin respuestas claras, el cliente puede dudar aunque tu negocio sea bueno."
+      solution="Mejoramos informacion, categorias, textos, fotos sugeridas, resenas y botones para que tu presencia local se vea mas seria."
       sections={[
         {
           title: "Cobertura en todo el Valle de Punilla",
           items: [
-            "Optimización para búsquedas en Cosquín, La Falda, Tanti",
-            "Presencia en Capilla del Monte y pueblos cercanos",
-            "Perfil adaptado a cada localidad y su temporada",
-            "Palabras clave específicas para cada zona",
-            "Gestión de reseñas en toda la región",
-            "Reportes por localidad",
+            "Cosquin, La Falda, Tanti y Capilla del Monte",
+            "Bialet Masse, Santa Maria de Punilla y Huerta Grande",
+            "Perfil adaptado a localidad y rubro",
+            "Palabras clave locales usadas con naturalidad",
+            "Recomendaciones para resenas y fotos",
+            "Seguimiento simple por WhatsApp",
           ],
         },
         {
-          title: "Tipos de negocio que posicionamos",
+          title: "Tipos de negocio que ayudamos",
           items: [
-            "Hoteles, hosterías y cabañas en todo Punilla",
-            "Restaurantes, bares y confiterías",
-            "Actividades turísticas y excursiones",
-            "Tiendas de regalos y artesanías",
-            "Servicios profesionales (médicos, bancos, etc.)",
-            "Estacionamientos y estaciones de servicio",
+            "Cabanas, hoteles y alojamientos temporarios",
+            "Restaurantes, bares y confiterias",
+            "Actividades turisticas y excursiones",
+            "Tiendas, artesanos y comercios locales",
+            "Complejos turisticos",
+            "Emprendimientos chicos y medianos",
           ],
         },
       ]}
       faqs={[
         {
-          question: "¿Mi negocio aparece en todas las localidades de Punilla?",
+          question: "Sirve si mi pueblo es chico?",
           answer:
-            "Depende de tu ubicación real. Si tenés un negocio en Cosquín, aparecés en búsquedas de Cosquín y alrededores. Si tenés varios locales, podemos optimizar cada perfil por separado.",
+            "Si. En localidades chicas una presencia clara puede marcar mucha diferencia, porque la decision suele pasar por confianza, fotos y contacto rapido.",
         },
         {
-          question: "¿Qué pasa si mi negocio está en un pueblo chico?",
+          question: "Pueden ayudar si ya tengo ficha?",
           answer:
-            "Mejor. Menos competencia significa que con una optimización básica ya podés estar en los primeros resultados. Aprovechamos eso para posicionarte rápido.",
-        },
-        {
-          question: "¿Atienden negocios de toda la provincia?",
-          answer:
-            "Nuestro foco principal es el Valle de Punilla, pero trabajamos con negocios de toda Córdoba. Consultanos por tu localidad.",
+            "Si. Revisamos lo que ya existe, corregimos lo necesario y armamos una lista simple de mejoras.",
         },
       ]}
       breadcrumbItems={[

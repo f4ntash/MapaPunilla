@@ -5,17 +5,17 @@ import { PricingGrid } from "@/components/pricing/pricing-grid"
 import { PricingFAQ } from "@/components/pricing/pricing-faq"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Planes de marketing para Punilla",
+  title: "Planes de marketing digital para negocios turisticos en Punilla",
   description:
-    "Planes de marketing digital para Punilla: Maps Inicial, Maps Profesional, Reservas Directas y Servicio Integral. Precios claros, sin permanencia.",
+    "Planes claros para mejorar Google Maps, SEO local, paginas web y WhatsApp de cabanas, hoteles, restaurantes y negocios turisticos de Punilla.",
   path: "/precios",
   keywords: [
     "planes marketing punilla",
-    "precios google maps",
-    "marketing digital carlos paz precio",
-    "plan maps inicial",
-    "plan maps profesional",
-    "reservas directas precio",
+    "marketing turistico Punilla",
+    "marketing para cabanas en Punilla",
+    "marketing para hoteles en Punilla",
+    "paginas web para cabanas",
+    "conseguir mas reservas",
   ],
 })
 

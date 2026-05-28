@@ -32,26 +32,26 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "¿Cuánto tiempo toma ver resultados en Google Maps?",
+      name: "Cuanto tiempo toma ver mejoras?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Los primeros resultados se ven en 1 o 2 semanas. La optimización completa toma entre 30 y 60 días.",
+        text: "Las mejoras de presentacion se ven rapido. SEO local y Google Maps requieren trabajo sostenido, con seguimiento claro para entender avances y proximos pasos.",
       },
     },
     {
       "@type": "Question",
-      name: "¿Necesito tener página web para usar Google Maps?",
+      name: "Necesito entender de marketing?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No es obligatorio. Solo con el perfil de Google Business Profile optimizado ya podés aparecer en Maps. Una web suma puntos.",
+        text: "No. Explicamos todo simple, empezamos con un diagnostico gratis y priorizamos acciones segun tu negocio, zona y presupuesto.",
       },
     },
     {
       "@type": "Question",
-      name: "¿Qué zonas de Punilla cubren?",
+      name: "Que zonas de Punilla cubren?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Trabajamos en Villa Carlos Paz, Cosquín, La Falda, Tanti, Capilla del Monte y todo el Valle de Punilla, Córdoba.",
+        text: "Trabajamos en Villa Carlos Paz, Cosquin, La Falda, Capilla del Monte, Tanti, Bialet Masse, Santa Maria de Punilla, Huerta Grande y todo el Valle de Punilla, Cordoba.",
       },
     },
   ],

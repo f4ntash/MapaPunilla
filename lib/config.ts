@@ -26,9 +26,9 @@ export const config = {
   location:
     process.env.NEXT_PUBLIC_LOCATION || "Villa Carlos Paz, Cordoba, Argentina",
   prices: {
-    basic: Number(process.env.NEXT_PUBLIC_PRICE_BASIC) || 35000,
-    pro: Number(process.env.NEXT_PUBLIC_PRICE_PRO) || 65000,
-    reservas: Number(process.env.NEXT_PUBLIC_PRICE_RESERVAS) || 85000,
+    basic: Number(process.env.NEXT_PUBLIC_PRICE_BASIC) || 49000,
+    pro: Number(process.env.NEXT_PUBLIC_PRICE_PRO) || 90000,
+    reservas: Number(process.env.NEXT_PUBLIC_PRICE_RESERVAS) || 139000,
   },
   formatPrice(price: number): string {
     return `$${price.toLocaleString("es-AR")}`
