@@ -1,4 +1,4 @@
-import { Map, Search, MessageSquare, CalendarCheck, Bot, BarChart3, Star, Camera } from "lucide-react"
+import { BarChart3, Bot, CalendarCheck, Camera, Map, Megaphone, MessageSquare, Palette, Search, Star, Store } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 export interface Service {
@@ -165,5 +165,81 @@ export const services: Service[] = [
       "Seleccion de fotos clave",
     ],
     gradient: "from-sky-600 to-indigo-500",
+  },
+  {
+    id: "social-management",
+    title: "Manejo de redes con tonada local",
+    shortTitle: "Manejo de redes",
+    description:
+      "Publicaciones pensadas para mostrar tu lugar, responder dudas y acercar turistas sin hablar dificil.",
+    problem:
+      "Publicar sin idea clara consume tiempo y muchas veces no genera consultas.",
+    result:
+      "Redes mas ordenadas, humanas y conectadas con lo que la gente quiere saber antes de escribir.",
+    icon: MessageSquare,
+    features: [
+      "Calendario simple",
+      "Ideas por temporada",
+      "Textos claros",
+      "Puente hacia WhatsApp",
+    ],
+    gradient: "from-orange-500 to-amber-500",
+  },
+  {
+    id: "content-design",
+    title: "Diseno de contenido",
+    shortTitle: "Contenido",
+    description:
+      "Piezas visuales para redes, historias, destacados y promociones que se sientan propias de tu negocio.",
+    problem:
+      "Una imagen improvisada puede hacer que un lugar lindo parezca poco cuidado.",
+    result:
+      "Tu comunicacion se ve mas prolija, local y facil de recordar.",
+    icon: Palette,
+    features: [
+      "Plantillas visuales",
+      "Historias y placas",
+      "Promos de temporada",
+      "Estilo coherente",
+    ],
+    gradient: "from-yellow-500 to-orange-500",
+  },
+  {
+    id: "local-branding",
+    title: "Branding local",
+    shortTitle: "Branding",
+    description:
+      "Ordenamos nombre, tono, colores, mensajes y detalles visuales para que tu negocio tenga identidad propia.",
+    problem:
+      "Muchos negocios se ven parecidos y cuesta recordar cual era cual.",
+    result:
+      "Una presencia con personalidad, mas reconocible y mas conectada con Punilla.",
+    icon: Store,
+    features: [
+      "Tono de marca",
+      "Mensajes principales",
+      "Identidad visual simple",
+      "Uso en redes y web",
+    ],
+    gradient: "from-emerald-600 to-green-500",
+  },
+  {
+    id: "visual-signage",
+    title: "Carteleria y redes visuales",
+    shortTitle: "Visuales",
+    description:
+      "Adaptamos piezas para cartel, redes, WhatsApp y Google para que todo cuente la misma historia.",
+    problem:
+      "Cuando cada canal dice algo distinto, el cliente se confunde.",
+    result:
+      "Un recorrido mas claro desde la ruta, el mapa, Instagram o WhatsApp.",
+    icon: Megaphone,
+    features: [
+      "Piezas para promos",
+      "Visuales para WhatsApp",
+      "Destacados de Instagram",
+      "Coherencia de marca",
+    ],
+    gradient: "from-red-600 to-rose-500",
   },
 ]

@@ -3,14 +3,16 @@ import { buildMetadata } from "@/lib/seo"
 import { PricingHero } from "@/components/pricing/pricing-hero"
 import { PricingGrid } from "@/components/pricing/pricing-grid"
 import { PricingFAQ } from "@/components/pricing/pricing-faq"
+import { AutomationPlans } from "@/components/pricing/automation-plans"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Planes de marketing digital para negocios turisticos en Punilla",
+  title: "Rutas digitales y automatizaciones para negocios de Punilla",
   description:
-    "Planes claros para mejorar Google Maps, SEO local, paginas web y WhatsApp de cabanas, hoteles, restaurantes y negocios turisticos de Punilla.",
+    "Rutas de visibilidad, reservas y automatizaciones simples para cabanas, hoteles, restaurantes y negocios turisticos del Valle de Punilla.",
   path: "/precios",
   keywords: [
-    "planes marketing punilla",
+    "rutas digitales Punilla",
+    "automatizaciones para negocios turisticos",
     "marketing turistico Punilla",
     "marketing para cabanas en Punilla",
     "marketing para hoteles en Punilla",
@@ -24,6 +26,7 @@ export default function PreciosPage() {
     <>
       <PricingHero />
       <PricingGrid />
+      <AutomationPlans />
       <PricingFAQ />
     </>
   )

@@ -1,6 +1,7 @@
 "use client"
 
-import { Check } from "lucide-react"
+import { Check, MapPin } from "lucide-react"
+import { motion } from "framer-motion"
 import type { Service } from "@/data/services"
 
 interface ServiceCardProps {
@@ -12,34 +13,41 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
   const Icon = service.icon
 
   return (
-    <div
-      className="group relative p-5 md:p-8 rounded-2xl border border-stone-200 bg-white hover:shadow-md hover:border-emerald-200 transition-all duration-200"
-      style={{ animationDelay: `${index * 0.04}s` }}
+    <motion.article
+      initial={{ opacity: 0, y: 22 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.42, delay: index * 0.04 }}
+      className="group relative min-h-[27rem] overflow-hidden rounded-[1.75rem] border border-[#4a3428]/15 bg-[#fff9ef] p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl hover:shadow-[#4a3428]/10"
     >
-      <div
-        className={`w-11 h-11 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-4 md:mb-5 shadow-xs`}
-      >
-        <Icon className="w-5 h-5 md:w-7 md:h-7 text-white" aria-hidden="true" />
+      <div className="absolute inset-x-0 top-0 h-24 bg-[#f5ebdd]" />
+      <div className="absolute right-5 top-5 text-xs font-bold uppercase tracking-[0.16em] text-[#8a7a66]">
+        Parada {String(index + 1).padStart(2, "0")}
       </div>
-      <h3 className="text-lg md:text-xl font-semibold text-stone-800 mb-2 md:mb-3 group-hover:text-emerald-700 transition-colors">
-        {service.title}
-      </h3>
-      <p className="text-sm text-stone-600 mb-4 md:mb-6">
-        {service.description}
-      </p>
-      <ul className="space-y-2 md:space-y-3">
-        {service.features.map((feature) => (
-          <li
-            key={feature}
-            className="text-sm text-stone-600 flex items-start gap-3"
-          >
-            <span className="w-5 h-5 rounded-full bg-emerald-50 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <Check className="w-3 h-3 text-emerald-600" aria-hidden="true" />
-            </span>
-            {feature}
-          </li>
-        ))}
-      </ul>
-    </div>
+      <div className="relative mb-8 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#2f5d3a] text-[#fff9ef] shadow-md">
+        <Icon className="h-7 w-7" aria-hidden="true" />
+      </div>
+      <div className="relative">
+        <div className="mb-3 inline-flex items-center gap-1 rounded-full bg-[#f5ebdd] px-3 py-1 text-xs font-bold text-[#4a3428]">
+          <MapPin className="h-3.5 w-3.5 text-[#d97732]" aria-hidden="true" />
+          Valle de Punilla
+        </div>
+        <h3 className="font-serif text-3xl font-semibold leading-tight text-[#1e1a16]">
+          {service.title}
+        </h3>
+        <p className="mt-4 text-base leading-7 text-[#4a3428]">
+          {service.description}
+        </p>
+        <p className="mt-5 text-sm font-bold text-[#2f5d3a]">{service.result}</p>
+        <ul className="mt-6 space-y-2">
+          {service.features.map((feature) => (
+            <li key={feature} className="flex gap-2 text-sm text-[#4a3428]">
+              <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#2f5d3a]" aria-hidden="true" />
+              {feature}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </motion.article>
   )
 }

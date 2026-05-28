@@ -1,6 +1,6 @@
 "use client"
 
-import { Check, ArrowRight } from "lucide-react"
+import { Check, ArrowRight, Route } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import type { PricingPlan } from "@/data/pricing"
@@ -14,7 +14,7 @@ interface PricingCardProps {
 export function PricingCard({ plan, index }: PricingCardProps) {
   return (
     <div
-      className={`relative p-6 md:p-8 rounded-2xl border transition-all duration-200 ${
+      className={`relative p-6 md:p-8 rounded-[1.75rem] border transition-all duration-300 hover:-translate-y-1 ${
         plan.highlighted
           ? "bg-stone-900 text-white border-stone-900 shadow-lg"
           : "bg-[#fffaf0] border-amber-200 hover:shadow-md hover:border-green-800/30"
@@ -33,13 +33,19 @@ export function PricingCard({ plan, index }: PricingCardProps) {
       )}
 
       <div className="mb-5">
+        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#d97732] text-[#1e1a16]">
+          <Route className="h-6 w-6" aria-hidden="true" />
+        </div>
         <h3
-          className={`text-lg md:text-xl font-semibold ${
+          className={`font-serif text-3xl font-semibold ${
             plan.highlighted ? "text-white" : "text-stone-800"
           }`}
         >
           {plan.name}
         </h3>
+        <p className={`mt-1 text-sm font-semibold ${plan.highlighted ? "text-amber-200" : "text-green-900"}`}>
+          {plan.subtitle}
+        </p>
         <p
           className={`text-sm mt-2 ${
             plan.highlighted ? "text-amber-100" : "text-stone-700"

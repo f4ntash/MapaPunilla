@@ -1,13 +1,18 @@
 export function ServicesHero() {
   return (
-    <section className="relative pt-28 md:pt-32 pb-16 md:pb-20 overflow-hidden bg-[#2b2118]">
-      <div className="absolute inset-0 bg-[linear-gradient(135deg,#2b2118_0%,#533e27_45%,#166534_100%)]" />
-      <div className="container relative z-10 text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4">
-          Servicios digitales para negocios turisticos de Punilla
-        </h1>
-        <p className="text-base md:text-lg text-amber-50 max-w-2xl mx-auto px-4">
-          Google Maps, SEO local, paginas web, WhatsApp y publicidad con foco en consultas, reservas y clientes reales.
+    <section className="relative overflow-hidden bg-[#f5ebdd] pt-28 pb-16 text-[#1e1a16] md:pt-36 md:pb-24">
+      <div className="absolute inset-0 opacity-[0.08] bg-[linear-gradient(90deg,#3f2f24_1px,transparent_1px),linear-gradient(#3f2f24_1px,transparent_1px)] bg-[size:34px_34px]" />
+      <div className="container relative z-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+        <div>
+          <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-[#d97732]">
+            Guia de herramientas
+          </p>
+          <h1 className="font-serif text-5xl font-semibold leading-[0.98] md:text-7xl">
+            Herramientas para que tu negocio sea mas facil de descubrir
+          </h1>
+        </div>
+        <p className="text-lg leading-8 text-[#4a3428]">
+          Google Maps, fotos, redes, webs simples, contenido, branding local y automatizaciones. Todo conectado como una guia digital del valle.
         </p>
       </div>
     </section>

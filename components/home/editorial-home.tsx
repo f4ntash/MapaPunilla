@@ -13,8 +13,10 @@ import {
   Route,
   Search,
 } from "lucide-react"
+import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { config } from "@/lib/config"
+import { automationPlans, pricingPlans } from "@/data/pricing"
 
 const places = [
   { name: "Villa Carlos Paz", x: "18%", y: "70%" },
@@ -55,6 +57,17 @@ const mapSteps = [
   ["01", "Miramos tu punto en el mapa", "Google, fotos, resenas, web, redes y WhatsApp."],
   ["02", "Ordenamos la historia", "Que haces, donde estas, para quien sos y como te contactan."],
   ["03", "Abrimos caminos de consulta", "Mas claridad para turistas, vecinos y familias que buscan."],
+]
+
+const tools = [
+  "Manejo de redes",
+  "Fotografia para negocios turisticos",
+  "Diseno de contenido",
+  "Google Maps",
+  "Webs simples",
+  "Optimizacion de perfiles",
+  "Branding local",
+  "Carteleria y redes visuales",
 ]
 
 function Texture() {
@@ -267,6 +280,101 @@ export function EditorialHome() {
                 </article>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f5ebdd] py-20 md:py-28">
+        <div className="container">
+          <div className="mb-12 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+            <div>
+              <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-[#2f5d3a]">Rutas de trabajo</p>
+              <h2 className="font-serif text-4xl font-semibold leading-tight text-[#1e1a16] md:text-6xl">
+                Algunas paradas para empezar
+              </h2>
+            </div>
+            <p className="text-lg leading-8 text-[#4a3428]">
+              No son paquetes frios. Son recorridos simples para ordenar tu presencia digital con tonada local: mas claro para Google, mas facil para tus clientes.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {pricingPlans.slice(0, 3).map((plan, index) => (
+              <motion.article
+                key={plan.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.45, delay: index * 0.06 }}
+                className="rounded-[1.75rem] border border-[#4a3428]/15 bg-[#fff9ef] p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl hover:shadow-[#4a3428]/10"
+              >
+                <div className="mb-5 flex items-center justify-between">
+                  <span className="rounded-full bg-[#1e1a16] px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[#facc15]">
+                    {plan.badge}
+                  </span>
+                  <Route className="h-5 w-5 text-[#d97732]" aria-hidden="true" />
+                </div>
+                <h3 className="font-serif text-3xl font-semibold text-[#1e1a16]">{plan.name}</h3>
+                <p className="mt-2 text-sm font-semibold text-[#2f5d3a]">{plan.subtitle}</p>
+                <p className="mt-4 text-base leading-7 text-[#4a3428]">{plan.description}</p>
+                <p className="mt-6 font-serif text-4xl font-semibold text-[#1e1a16]">{plan.price}</p>
+              </motion.article>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="/precios">
+              <Button variant="outline" className="rounded-full border-[#4a3428] bg-[#fff9ef]">
+                Ver todas las rutas y automatizaciones
+                <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#fff9ef] py-20 md:py-28">
+        <div className="container grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-[#d97732]">Herramientas del mapa</p>
+            <h2 className="font-serif text-4xl font-semibold leading-tight text-[#1e1a16] md:text-6xl">
+              Todo lo que ayuda a que tu negocio sea mas facil de descubrir
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-[#4a3428]">
+              Redes, fotos, perfiles, diseno y automatizaciones como piezas de una misma guia. Sin vueltas tecnicas.
+            </p>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {tools.map((tool, index) => (
+              <motion.div
+                key={tool}
+                initial={{ opacity: 0, x: 16 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.35, delay: index * 0.035 }}
+                className="rounded-2xl border border-[#4a3428]/15 bg-[#f5ebdd] p-4 text-base font-semibold text-[#1e1a16]"
+              >
+                {tool}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden bg-[#1e1a16] py-20 text-[#fff9ef] md:py-28">
+        <Texture />
+        <div className="container relative z-10">
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-[#facc15]">Automatizaciones simples</p>
+            <h2 className="font-serif text-4xl font-semibold leading-tight md:text-6xl">
+              Cuando llegan mensajes, que nadie quede sin respuesta
+            </h2>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {automationPlans.map((plan) => (
+              <article key={plan.id} className="rounded-[1.5rem] border border-[#fff9ef]/15 bg-[#fff9ef]/10 p-5 backdrop-blur">
+                <h3 className="font-serif text-2xl font-semibold">{plan.name}</h3>
+                <p className="mt-3 text-sm leading-6 text-[#f5ebdd]">{plan.idealFor}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
