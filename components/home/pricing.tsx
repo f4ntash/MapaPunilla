@@ -13,8 +13,8 @@ export function Pricing() {
     <SectionWrapper className="bg-stone-100">
       <SectionHeader
         badge="Planes"
-        title="Elegí el plan que va con tu negocio"
-        subtitle="Empezá con lo básico y sumá servicios cuando quieras. Todos incluyen soporte directo por WhatsApp."
+        title="Planes claros para empezar sin miedo"
+        subtitle="Primero entendemos tu negocio. Despues priorizamos lo que mas puede ayudarte a recibir consultas, reservas o visitas."
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-start">
@@ -114,7 +114,7 @@ export function Pricing() {
                   window.open(config.whatsapp.link(plan.whatsapp), "_blank")
                 } else {
                   window.open(
-                    config.whatsapp.link("Quiero información sobre sus planes"),
+                    config.whatsapp.link("Quiero informacion sobre sus planes"),
                     "_blank"
                   )
                 }
@@ -130,7 +130,7 @@ export function Pricing() {
       <div className="text-center mt-10 md:mt-12">
         <Link href="/precios">
           <Button variant="ghost" size="lg" aria-label="Comparar planes en detalle" className="gap-2">
-            Comparar planes en detalle
+            Ver planes en detalle
             <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Button>
         </Link>

@@ -7,44 +7,44 @@ export interface FAQItem {
 export const faqItems: FAQItem[] = [
   {
     id: "1",
-    question: "¿En cuánto tiempo empiezo a ver resultados?",
+    question: "No se si esto le sirve a mi negocio. Como empiezo?",
     answer:
-      "Los primeros resultados en Google Maps se ven en 2 a 4 semanas. La optimización inicial es rápida. Los resultados completos llegan entre 60 y 90 días. Te mandamos reportes para que veas el progreso.",
+      "Empezamos con un diagnostico gratis. Miramos como aparece tu negocio en Google, Maps, redes y WhatsApp, y te decimos que conviene mejorar primero segun tu rubro, zona y presupuesto.",
   },
   {
     id: "2",
-    question: "¿Necesito tener un sitio web para contratarlos?",
+    question: "Ya publique en redes y no funciono. Que cambia?",
     answer:
-      "No, para nada. Muchos clientes empiezan solo con Google Maps y WhatsApp. El sitio web es un adicional que recomendamos después, pero no hace falta para empezar.",
+      "Publicar por publicar no alcanza. Trabajamos sobre busquedas reales, Google Maps, confianza visual, mensajes claros y llamados a la accion para que la gente consulte o reserve.",
   },
   {
     id: "3",
-    question: "¿Solo trabajan en Carlos Paz?",
+    question: "Tengo que entender de marketing o tecnologia?",
     answer:
-      "Trabajamos en todo el Valle de Punilla: Carlos Paz, Cosquín, La Falda, Villa Giardino, Capilla del Monte y todas las localidades de la zona. Conocemos bien la región porque vivimos acá.",
+      "No. Te explicamos todo simple y nos ocupamos de la parte tecnica. Vos aprobás lo importante y ves avances concretos en consultas, visibilidad y presentacion.",
   },
   {
     id: "4",
-    question: "¿Cómo son las automatizaciones? ¿Es complicado?",
+    question: "Mi negocio es chico. Igual puedo contratar?",
     answer:
-      "Para nada complicado. Nosotros configuramos todo. El chatbot atiende a tus clientes automáticamente por WhatsApp. Vos solo tenés que ocuparte cuando llegue una consulta importante. El resto lo hace solo.",
+      "Si. Justamente trabajamos con cabanas, alojamientos, restaurantes, bares y emprendimientos locales que necesitan crecer sin estructuras grandes ni presupuestos imposibles.",
   },
   {
     id: "5",
-    question: "¿Tengo que dejar mis redes sociales?",
+    question: "No quiero gastar plata sin saber si vuelve.",
     answer:
-      "No, al contrario. Nuestros servicios potencian todo lo que ya venís haciendo. No reemplazamos tus redes, las hacemos más efectivas. Trabajamos junto con lo que ya tenés.",
+      "Por eso arrancamos con diagnostico, prioridades claras y acciones medibles. La idea no es venderte cosas de mas, sino mejorar lo que puede traer consultas y reservas reales.",
   },
   {
     id: "6",
-    question: "¿Me dan soporte después de empezar?",
+    question: "Que zonas cubren?",
     answer:
-      "Sí, todos los planes incluyen soporte por WhatsApp. Hacemos seguimiento de resultados y optimizaciones periódicas. En los planes superiores tenés soporte prioritario y reuniones semanales.",
+      "Trabajamos en Villa Carlos Paz, Cosquin, La Falda, Capilla del Monte, Tanti, Bialet Masse, Santa Maria de Punilla, Huerta Grande y todo el Valle de Punilla, Cordoba.",
   },
   {
     id: "7",
-    question: "¿Pueden venir a mi negocio?",
+    question: "Cuanto tarda en verse algun cambio?",
     answer:
-      "Sí, visitamos tu negocio personalmente. Nos gusta conocer el lugar, sacar fotos profesionales y entender cómo funciona tu negocio para hacer un trabajo mejor.",
+      "Algunas mejoras de presentacion se ven apenas se implementan. En Google y SEO local, los primeros movimientos suelen verse entre 2 y 4 semanas, y se consolidan con trabajo sostenido.",
   },
 ]

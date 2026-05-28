@@ -5,9 +5,9 @@ export function WhyChooseUs() {
   return (
     <SectionWrapper>
       <SectionHeader
-        badge="Por qué nosotros"
-        title="Conocé Punilla. Potenciamos Punilla."
-        subtitle="No somos una agencia de afuera. Vivimos, trabajamos y entendemos el turismo local porque somos parte de esta región."
+        badge="Por que nosotros"
+        title="Marketing local, simple y orientado a resultados"
+        subtitle="Trabajamos para negocios reales del Valle de Punilla: lugares chicos, familiares o en crecimiento que necesitan mas visibilidad y confianza."
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
@@ -24,9 +24,7 @@ export function WhyChooseUs() {
               <h3 className="text-base md:text-lg font-semibold text-stone-800 mb-2 md:mb-3">
                 {item.title}
               </h3>
-              <p className="text-sm text-stone-600">
-                {item.description}
-              </p>
+              <p className="text-sm text-stone-600">{item.description}</p>
             </div>
           )
         })}

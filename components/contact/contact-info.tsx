@@ -1,24 +1,25 @@
 import { MessageCircle, Mail, MapPinned, Clock } from "lucide-react"
+import { config } from "@/lib/config"
 
 const contactDetails = [
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    value: "+54 9 3541 65-5383",
-    href: "https://wa.me/5493541655383",
+    value: config.phoneDisplay,
+    href: config.whatsapp.url,
     action: "Escribinos ahora",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "hola@mapapunilla.com",
-    href: "mailto:hola@mapapunilla.com",
+    value: config.email,
+    href: `mailto:${config.email}`,
     action: "Enviar email",
   },
   {
     icon: MapPinned,
-    label: "Ubicación",
-    value: "Villa Carlos Paz, Córdoba, Argentina",
+    label: "Ubicacion",
+    value: config.location,
     href: "https://maps.google.com/?q=Villa+Carlos+Paz+Cordoba+Argentina",
     action: "Ver en maps",
   },
@@ -33,7 +34,7 @@ export function ContactInfo() {
   return (
     <div>
       <h2 className="text-xl md:text-2xl font-bold text-stone-800 mb-6">
-        Información de contacto
+        Informacion de contacto
       </h2>
 
       <div className="space-y-4">
@@ -72,13 +73,13 @@ export function ContactInfo() {
 
       <div className="mt-6 p-5 md:p-6 rounded-2xl bg-gradient-to-br from-emerald-700 to-emerald-800 text-white">
         <h3 className="font-bold text-base md:text-lg mb-2">
-          Respuesta garantizada
+          Diagnostico gratis
         </h3>
         <p className="text-sm text-emerald-200 mb-4">
-          Te respondemos por WhatsApp en menos de 30 minutos en horario comercial.
+          Contanos tu rubro y localidad. Te respondemos con una mirada simple sobre que mejorar primero.
         </p>
         <a
-          href="https://wa.me/5493541655383?text=Hola%21+Quiero+info"
+          href={config.whatsapp.link("Hola! Quiero un diagnostico gratis")}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white text-emerald-700 hover:bg-emerald-50 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"

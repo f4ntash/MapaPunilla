@@ -13,42 +13,42 @@ export const whyChooseUs: WhyChooseUsItem[] = [
     id: "local",
     title: "Somos de Punilla",
     description:
-      "Vivimos, trabajamos y entendemos el turismo local porque somos de acá. Sabemos lo que funciona en Carlos Paz, Cosquín y cada pueblo de la región.",
+      "Conocemos el movimiento turistico de Villa Carlos Paz, Cosquin, La Falda, Tanti y las localidades del valle.",
     icon: MapPin,
   },
   {
-    id: "results",
-    title: "Resultados que se ven",
+    id: "simple",
+    title: "Te explicamos sin vueltas",
     description:
-      "Trabajamos con objetivos claros: más reservas, más reseñas, más clientes. Te mostramos los números cada mes, sin vueltas.",
+      "No necesitas entender de marketing. Te contamos que hacemos, por que importa y como ayuda a conseguir consultas.",
+    icon: Users,
+  },
+  {
+    id: "results",
+    title: "Foco en reservas y clientes",
+    description:
+      "Priorizamos visibilidad, confianza y mensajes claros para que mas personas contacten a tu negocio.",
     icon: TrendingUp,
   },
   {
     id: "personalized",
-    title: "Te visitamos personalmente",
+    title: "Pensado para negocios chicos",
     description:
-      "No somos una agencia de internet nada más. Vamos a tu negocio, conocemos tu espacio, sacamos fotos y diseñamos la estrategia justa para vos.",
+      "Adaptamos la estrategia a tu rubro, temporada, presupuesto y capacidad real de atencion.",
     icon: Home,
   },
   {
     id: "support",
-    title: "Soporte directo por WhatsApp",
+    title: "Acompanamiento por WhatsApp",
     description:
-      "Tenés acceso directo a tu asesor por WhatsApp. Sin bots, sin formularios, sin esperar. Respondemos rápido.",
+      "Tenes contacto directo para dudas, ajustes y seguimiento. Sin paneles raros ni procesos frios.",
     icon: Headphones,
   },
   {
-    id: "team",
-    title: "Un equipo completo",
-    description:
-      "Especialistas en Google Maps, SEO, WhatsApp, diseño web, fotografía e inteligencia artificial. Todo lo que necesitás en un solo lugar.",
-    icon: Users,
-  },
-  {
     id: "coverage",
-    title: "Cubrimos todo Punilla",
+    title: "SEO local de verdad",
     description:
-      "De Carlos Paz a Capilla del Monte, trabajamos con negocios de toda la región. Conocemos cada localidad y su movimiento turístico.",
+      "Trabajamos busquedas locales, Google Maps, paginas web y contenido orientado al Valle de Punilla.",
     icon: Target,
   },
 ]

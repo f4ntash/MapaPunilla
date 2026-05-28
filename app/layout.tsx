@@ -23,13 +23,27 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Mapa Punilla | Agencia Digital para Turismo en Punilla",
+    default: "Mapa Punilla | Marketing Digital para Negocios Turisticos",
     template: "%s | Mapa Punilla",
   },
   description: config.site.description,
   keywords: [
     "mapa punilla",
     "mapapunilla",
+    "marketing en Punilla",
+    "marketing digital Punilla",
+    "marketing para hoteles en Punilla",
+    "marketing para cabanas en Punilla",
+    "marketing para restaurantes en Punilla",
+    "publicidad para negocios turisticos",
+    "negocios turisticos en Punilla",
+    "diseno web para turismo",
+    "paginas web para cabanas",
+    "paginas web para hoteles",
+    "conseguir mas reservas",
+    "aumentar clientes en temporada",
+    "Bialet Masse",
+    "Santa Maria de Punilla",
     "google maps carlos paz",
     "google maps punilla",
     "marketing villa carlos paz",
@@ -57,13 +71,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_AR",
     siteName: config.site.name,
-    title: `${config.site.name} | Agencia Digital para Turismo en Punilla`,
+    title: `${config.site.name} | Marketing Digital para Negocios Turisticos`,
     description: config.site.description,
     url: config.site.url,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${config.site.name} | Agencia Digital para Turismo en Punilla`,
+    title: `${config.site.name} | Marketing Digital para Negocios Turisticos`,
     description: config.site.description,
   },
   robots: {
@@ -197,7 +211,6 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <head>
-        <link rel="canonical" href={config.site.url} />
         <meta name="geo.region" content="AR-X" />
         <meta name="geo.placename" content="Villa Carlos Paz" />
         <meta name="geo.position" content="-31.4201;-64.4978" />

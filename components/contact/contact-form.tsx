@@ -5,6 +5,7 @@ import { Send, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { config } from "@/lib/config"
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
@@ -19,8 +20,8 @@ export function ContactForm() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    const text = `Hola%21+Soy+${encodeURIComponent(form.name)}+de+${encodeURIComponent(form.business)}+-+${encodeURIComponent(form.message)}`
-    window.open(`https://wa.me/5493541655383?text=${text}`, "_blank")
+    const text = `Hola! Soy ${form.name} de ${form.business}. ${form.message}`
+    window.open(config.whatsapp.link(text), "_blank")
     setLoading(false)
     setSubmitted(true)
   }

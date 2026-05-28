@@ -1,50 +1,58 @@
 "use client"
 
 import { useInView } from "@/lib/use-in-view"
-import { SearchX, Percent, Clock, CheckCircle } from "lucide-react"
+import { SearchX, Percent, Clock, CheckCircle, HelpCircle } from "lucide-react"
 import { SectionWrapper, SectionHeader } from "@/components/shared/section-wrapper"
 import { cn } from "@/lib/utils"
 
 const problems = [
   {
     icon: SearchX,
-    title: "Los turistas no encuentran tu negocio",
+    title: "Te buscan, pero encuentran a otro",
     description:
-      "Buscan en Google Maps y aparecen 5 competidores antes que vos. Ellos se llevan los clientes.",
+      "En Google Maps aparecen competidores con mejores fotos, mas resenas o una ficha mas completa.",
   },
   {
     icon: Percent,
-    title: "Perdés plata en comisiones",
+    title: "Pagas comisiones por cada reserva",
     description:
-      "Booking, Mercado Libre y otros intermediarios se quedan hasta el 25% de cada reserva.",
+      "Las plataformas ayudan, pero tambien se quedan con una parte grande de lo que ganaste.",
   },
   {
     icon: Clock,
-    title: "No alcanzás a responder consultas",
+    title: "Perdes consultas por responder tarde",
     description:
-      "Los clientes preguntan por WhatsApp y si no respondés rápido, llaman al competidor de al lado.",
+      "Si una persona pregunta por WhatsApp y no recibe respuesta clara, sigue buscando.",
   },
 ]
 
 const solutions = [
   {
     icon: CheckCircle,
-    title: "Aparecé primero en Google Maps",
+    title: "Ordenamos tu presencia online",
     description:
-      "Optimizamos tu perfil para que los turistas te encuentren antes que a la competencia.",
+      "Mejoramos Google, web, WhatsApp, fotos y mensajes para que tu negocio se entienda rapido.",
   },
   {
     icon: CheckCircle,
-    title: "Recibí reservas directas sin comisiones",
+    title: "Trabajamos para consultas reales",
     description:
-      "Cobrá el 100% de cada reserva. Sin intermediarios, sin perder plata.",
+      "No vendemos humo: priorizamos llamadas, mensajes, reservas y clientes para temporada.",
   },
   {
     icon: CheckCircle,
-    title: "Un chatbot atiende por vos las 24 horas",
+    title: "Te acompanamos paso a paso",
     description:
-      "Respondé consultas automáticamente. Nunca más perdás un cliente por no contestar.",
+      "Explicamos simple que hacemos, por que lo hacemos y como medir si esta funcionando.",
   },
+]
+
+const objections = [
+  "No se si esto me sirve.",
+  "Ya publique en redes y no funciono.",
+  "No entiendo de marketing.",
+  "No quiero gastar sin saber si vuelve.",
+  "Mi negocio es chico.",
 ]
 
 export function ProblemSolution() {
@@ -53,9 +61,9 @@ export function ProblemSolution() {
   return (
     <SectionWrapper className="bg-stone-100">
       <SectionHeader
-        badge="Problema común"
-        title="¿Tu negocio aparece cuando los turistas buscan?"
-        subtitle="El 87% busca en Google Maps antes de reservar. Si no aparecés, perdés clientes todos los días."
+        badge="Problema comun"
+        title="Tu negocio puede ser muy bueno y aun asi no recibir consultas"
+        subtitle="Hoy la primera impresion suele pasar en Google, Maps, WhatsApp o una web. Si ahi no se ve claro y confiable, el cliente elige otra opcion."
       />
 
       <div
@@ -68,17 +76,14 @@ export function ProblemSolution() {
         <div className="space-y-4">
           <h3 className="text-lg md:text-xl font-bold text-red-700 flex items-center gap-3">
             <span className="w-8 h-0.5 bg-red-600" aria-hidden="true" />
-            Esto te pasa hoy
+            Lo que suele pasar
           </h3>
           {problems.map((item, i) => {
             const Icon = item.icon
             return (
               <div
                 key={item.title}
-                className={cn(
-                  "flex gap-4 p-4 md:p-5 rounded-2xl bg-white border border-red-200 shadow-xs transition-all duration-500 ease-out",
-                  isInView ? "animate-fade-in-up" : "opacity-0"
-                )}
+                className="flex gap-4 p-4 md:p-5 rounded-2xl bg-white border border-red-200 shadow-xs"
                 style={{ animationDelay: `${i * 0.08}s` }}
               >
                 <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-red-50 flex items-center justify-center">
@@ -86,9 +91,7 @@ export function ProblemSolution() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-stone-800">{item.title}</h4>
-                  <p className="text-sm text-stone-600 mt-1">
-                    {item.description}
-                  </p>
+                  <p className="text-sm text-stone-600 mt-1">{item.description}</p>
                 </div>
               </div>
             )
@@ -98,17 +101,14 @@ export function ProblemSolution() {
         <div className="space-y-4">
           <h3 className="text-lg md:text-xl font-bold text-emerald-700 flex items-center gap-3">
             <span className="w-8 h-0.5 bg-emerald-600" aria-hidden="true" />
-            Nosotros lo solucionamos
+            Como lo resolvemos
           </h3>
           {solutions.map((item, i) => {
             const Icon = item.icon
             return (
               <div
                 key={item.title}
-                className={cn(
-                  "flex gap-4 p-4 md:p-5 rounded-2xl bg-white border border-emerald-200 shadow-xs transition-all duration-500 ease-out",
-                  isInView ? "animate-fade-in-up" : "opacity-0"
-                )}
+                className="flex gap-4 p-4 md:p-5 rounded-2xl bg-white border border-emerald-200 shadow-xs"
                 style={{ animationDelay: `${i * 0.08}s` }}
               >
                 <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center">
@@ -116,13 +116,32 @@ export function ProblemSolution() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-stone-800">{item.title}</h4>
-                  <p className="text-sm text-stone-600 mt-1">
-                    {item.description}
-                  </p>
+                  <p className="text-sm text-stone-600 mt-1">{item.description}</p>
                 </div>
               </div>
             )
           })}
+        </div>
+      </div>
+
+      <div className="mt-10 md:mt-12 rounded-2xl bg-white border border-stone-200 p-5 md:p-7">
+        <div className="flex items-start gap-3 mb-5">
+          <HelpCircle className="w-6 h-6 text-emerald-600 mt-1" aria-hidden="true" />
+          <div>
+            <h3 className="text-lg md:text-xl font-bold text-stone-800">
+              Si tenes dudas, empezamos por un diagnostico gratis
+            </h3>
+            <p className="text-sm md:text-base text-stone-600 mt-1">
+              Miramos tu negocio, te decimos que mejoraria primero y te explicamos cada paso sin tecnicismos.
+            </p>
+          </div>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3">
+          {objections.map((item) => (
+            <div key={item} className="rounded-xl bg-stone-50 border border-stone-200 p-3 text-sm font-medium text-stone-700">
+              {item}
+            </div>
+          ))}
         </div>
       </div>
     </SectionWrapper>
