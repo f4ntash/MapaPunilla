@@ -45,6 +45,21 @@ export function MapExplorer() {
         </div>
 
         <div className="mb-8 rounded-[1.5rem] border border-[#4a3428]/15 bg-[#f5ebdd] p-4">
+          <div className="mb-4 flex gap-2 overflow-x-auto pb-2">
+            {mapCategories.map((item) => {
+              const count = mapBusinesses.filter((business) => business.category === item).length
+              return (
+                <button
+                  key={item}
+                  type="button"
+                  onClick={() => setCategory(item)}
+                  className="shrink-0 rounded-full border border-[#4a3428]/15 bg-[#fff9ef] px-4 py-2 text-xs font-bold uppercase tracking-[0.12em] text-[#1e1a16] transition hover:bg-white"
+                >
+                  {item} · {count}
+                </button>
+              )
+            })}
+          </div>
           <div className="grid gap-3 md:grid-cols-[1fr_14rem_14rem]">
             <label className="relative block">
               <span className="sr-only">Buscar negocio</span>

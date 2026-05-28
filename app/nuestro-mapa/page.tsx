@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { MapPinned, MessageCircle, Route, Sparkles } from "lucide-react"
 import { MapExplorer } from "@/components/map/map-explorer"
+import { FoundersProgram } from "@/components/map/founders-program"
+import { LocalGuides, MapActivity } from "@/components/map/map-activity"
 import { InstagramReadyFormats, PlatformAuthority } from "@/components/platform/platform-authority"
 import { appearanceOptions, mapBusinesses, mapStats } from "@/data/map-businesses"
 import { buildMetadata } from "@/lib/seo"
@@ -18,6 +20,9 @@ export const metadata: Metadata = buildMetadata({
     "negocios turísticos Punilla",
     "cabañas Punilla",
     "restaurantes Punilla",
+    "hoteles Punilla",
+    "alquileres Punilla",
+    "experiencias Punilla",
     "guía local Punilla",
     "Valle de Punilla",
   ],
@@ -104,36 +109,15 @@ export default function NuestroMapaPage() {
         </div>
       </section>
 
+      <FoundersProgram />
+
+      <MapActivity />
+
       <MapExplorer />
 
-      <PlatformAuthority />
+      <LocalGuides />
 
-      <section className="bg-[#fff9ef] py-18 md:py-24">
-        <div className="container grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-          <div>
-            <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-[#d97732]">Prueba de vida</p>
-            <h2 className="font-serif text-4xl font-semibold leading-tight text-[#1e1a16] md:text-5xl">
-              Últimos lugares sumados y próximos recorridos
-            </h2>
-            <p className="mt-5 text-lg leading-8 text-[#4a3428]">
-              El mapa se está abriendo por etapas: primero fichas fundadoras, después historias, guías locales y recomendados por zona.
-            </p>
-          </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            {[
-              ["Últimos lugares sumados", "Refugio Los Molles, Mesa de la Sierra y Sabores del Lago ya aparecen como ejemplos fundadores del lanzamiento."],
-              ["Próximamente en el mapa", "Circuitos por localidad, recomendados del valle, historias de lugares y guías para temporada."],
-              ["Guías locales", "Notas simples para elegir mejor: fotos, reseñas, reservas, Google Maps y WhatsApp turístico."],
-              ["Historias del mapa", "Pequeños relatos de negocios que hacen que Punilla tenga identidad propia."],
-            ].map(([title, text]) => (
-              <article key={title} className="rounded-[1.5rem] border border-[#4a3428]/15 bg-[#f5ebdd] p-5">
-                <h3 className="font-serif text-2xl font-semibold text-[#1e1a16]">{title}</h3>
-                <p className="mt-3 text-sm leading-6 text-[#4a3428]">{text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      <PlatformAuthority />
 
       <InstagramReadyFormats />
 

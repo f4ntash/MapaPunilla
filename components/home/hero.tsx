@@ -18,7 +18,7 @@ const zones = [
   "Huerta Grande",
 ]
 
-const businessTypes = ["Cabañas", "Hoteles chicos", "Restaurantes", "Bares", "Alquileres temporarios"]
+const businessTypes = ["Cabañas", "Hoteles chicos", "Restaurantes", "Bares", "Alquileres"]
 
 export function Hero() {
   const { ref, isInView } = useInView()

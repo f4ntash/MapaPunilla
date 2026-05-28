@@ -4,7 +4,7 @@ export const mapCategories = [
   "Restaurantes",
   "Bares",
   "Complejos",
-  "Alquileres temporarios",
+  "Alquileres",
   "Experiencias",
 ] as const
 
@@ -111,7 +111,7 @@ export const mapBusinesses: MapBusiness[] = [
   {
     id: "casa-la-quebrada",
     name: "Casa La Quebrada",
-    category: "Alquileres temporarios",
+    category: "Alquileres",
     location: "Capilla del Monte",
     description: "Casa equipada para estadías cortas cerca de senderos, ferias y paisajes del norte de Punilla.",
     tags: ["Temporario", "Senderos", "Mascotas"],
@@ -195,7 +195,7 @@ export const mapBusinesses: MapBusiness[] = [
   {
     id: "departamentos-rio-cosquin",
     name: "Departamentos Río Cosquín",
-    category: "Alquileres temporarios",
+    category: "Alquileres",
     location: "Cosquín",
     description: "Departamentos sencillos para fines de semana, festivales y escapadas cerca del río.",
     tags: ["Río", "Festival", "Temporario"],
@@ -307,7 +307,7 @@ export const mapBusinesses: MapBusiness[] = [
   {
     id: "loft-centro-carlos-paz",
     name: "Loft Centro Carlos Paz",
-    category: "Alquileres temporarios",
+    category: "Alquileres",
     location: "Villa Carlos Paz",
     description: "Loft práctico para parejas que quieren teatro, lago, centro y salida rápida a las sierras.",
     tags: ["Centro", "Teatro", "Parejas"],
