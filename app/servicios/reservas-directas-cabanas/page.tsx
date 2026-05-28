@@ -10,7 +10,7 @@ const meta = {
   keywords: [
     "reservas directas cabañas",
     "reservas sin comision",
-    "pagina web cabañas carlos paz",
+    "página web cabañas carlos paz",
     "sistema de reservas cabañas",
     "booking alternativas",
     "reservar cabañas directo",

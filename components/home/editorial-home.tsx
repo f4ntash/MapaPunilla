@@ -20,7 +20,7 @@ import { automationPlans, pricingPlans } from "@/data/pricing"
 
 const places = [
   { name: "Villa Carlos Paz", x: "18%", y: "70%" },
-  { name: "Cosquin", x: "38%", y: "49%" },
+  { name: "Cosquín", x: "38%", y: "49%" },
   { name: "La Falda", x: "52%", y: "34%" },
   { name: "Tanti", x: "20%", y: "47%" },
   { name: "Capilla del Monte", x: "72%", y: "18%" },
@@ -35,37 +35,37 @@ const audiences = [
   },
   {
     icon: BedDouble,
-    title: "Cabanas",
+    title: "Cabañas",
     place: "Tanti y La Falda",
     text: "Fotos, Google Maps, web y WhatsApp ordenados para recibir consultas claras.",
   },
   {
     icon: Coffee,
     title: "Restaurantes",
-    place: "Cosquin",
-    text: "Una presencia local que ayude a elegir donde comer, reservar o llegar.",
+    place: "Cosquín",
+    text: "Una presencia local que ayude a elegir dónde comer, reservar o llegar.",
   },
   {
     icon: Building2,
-    title: "Complejos turisticos",
+    title: "Complejos turísticos",
     place: "Todo el valle",
-    text: "Una guia digital simple para explicar servicios, ubicacion y formas de contacto.",
+    text: "Una guía digital simple para explicar servicios, ubicación y formas de contacto.",
   },
 ]
 
 const mapSteps = [
-  ["01", "Miramos tu punto en el mapa", "Google, fotos, resenas, web, redes y WhatsApp."],
-  ["02", "Ordenamos la historia", "Que haces, donde estas, para quien sos y como te contactan."],
-  ["03", "Abrimos caminos de consulta", "Mas claridad para turistas, vecinos y familias que buscan."],
+  ["01", "Miramos tu punto en el mapa", "Google, fotos, reseñas, web, redes y WhatsApp."],
+  ["02", "Ordenamos la historia", "Qué hacés, dónde estás, para quién sos y cómo te contactan."],
+  ["03", "Abrimos caminos de consulta", "Más claridad para turistas, vecinos y familias que buscan."],
 ]
 
 const tools = [
   "Manejo de redes",
-  "Fotografia para negocios turisticos",
-  "Diseno de contenido",
+  "Fotografía para negocios turísticos",
+  "Diseño de contenido",
   "Google Maps",
   "Webs simples",
-  "Optimizacion de perfiles",
+  "Optimización de perfiles",
   "Branding local",
   "Carteleria y redes visuales",
 ]
@@ -89,13 +89,13 @@ export function EditorialHome() {
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#4a3428]/20 bg-[#fff9ef]/70 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#4a3428]">
               <Mountain className="h-4 w-4" aria-hidden="true" />
-              Valle de Punilla · Cordoba
+              Valle de Punilla · Córdoba
             </div>
             <h1 className="font-serif text-5xl font-semibold leading-[0.95] tracking-tight text-[#1e1a16] sm:text-6xl lg:text-7xl xl:text-8xl">
               El mapa digital del turismo en Punilla
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-[#4a3428] md:text-xl">
-              Hacemos que cabanas, hoteles, restaurantes y complejos del valle sean mas faciles de descubrir, entender y contactar cuando alguien busca donde dormir, comer o visitar.
+              Hacemos que cabañas, hoteles, restaurantes y complejos del valle sean más fáciles de descubrir, entender y contactar cuando alguien busca dónde dormir, comer o visitar.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button
@@ -113,7 +113,7 @@ export function EditorialHome() {
                   variant="outline"
                   className="h-13 w-full gap-2 rounded-full border-[#4a3428] bg-[#fff9ef]/70 px-7 text-[#1e1a16] hover:bg-white sm:w-auto"
                 >
-                  Explorar como funciona
+                  Explorar cómo funciona
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Button>
               </Link>
@@ -132,10 +132,10 @@ export function EditorialHome() {
                   <path d="M50 390 C130 376 156 426 244 392 C306 368 326 404 382 376" fill="none" stroke="#fff9ef" strokeWidth="1.5" opacity=".35" />
                 </svg>
                 <div className="absolute left-6 top-6 rounded-full bg-[#fff9ef] px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#2b2118]">
-                  Guia viva
+                  Guía viva
                 </div>
                 <div className="absolute bottom-6 left-6 right-6 rounded-2xl bg-[#fff9ef]/92 p-5 text-[#1e1a16] backdrop-blur">
-                  <p className="font-serif text-3xl font-semibold">Punilla tambien se explora online.</p>
+                  <p className="font-serif text-3xl font-semibold">Punilla también se explora online.</p>
                   <p className="mt-2 text-sm leading-6 text-[#4a3428]">
                     Del cartel en la ruta al resultado en Google. Del paisaje al WhatsApp.
                   </p>
@@ -143,7 +143,7 @@ export function EditorialHome() {
               </div>
             </div>
             <div className="absolute -bottom-5 -left-3 rounded-2xl border border-[#4a3428]/15 bg-[#fff9ef] px-4 py-3 text-sm font-semibold text-[#4a3428] shadow-lg">
-              Villa Carlos Paz · Cosquin · La Falda
+              Villa Carlos Paz · Cosquín · La Falda
             </div>
           </div>
         </div>
@@ -152,17 +152,17 @@ export function EditorialHome() {
       <section className="bg-[#fff9ef] py-20 md:py-28">
         <div className="container grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
           <div>
-            <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-[#d97732]">Busqueda local</p>
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-[#d97732]">Búsqueda local</p>
             <h2 className="font-serif text-4xl font-semibold leading-tight text-[#1e1a16] md:text-6xl">
-              El valle tambien se busca online
+              El valle también se busca online
             </h2>
           </div>
           <div className="space-y-5 text-lg leading-8 text-[#4a3428]">
             <p>
-              Antes de llegar, muchos turistas ya eligieron donde dormir, comer o pasear mirando Google Maps, reseñas, fotos, Instagram y WhatsApp.
+              Antes de llegar, muchos turistas ya eligieron dónde dormir, comer o pasear mirando Google Maps, reseñas, fotos, Instagram y WhatsApp.
             </p>
             <p>
-              Mapa Punilla ordena esa primera impresion digital para que tu lugar se entienda rapido, se vea confiable y tenga caminos claros de contacto.
+              Mapa Punilla ordena esa primera impresión digital para que tu lugar se entienda rápido, se vea confiable y tenga caminos claros de contacto.
             </p>
           </div>
         </div>
@@ -196,7 +196,7 @@ export function EditorialHome() {
                   <h3 className="font-serif text-3xl font-semibold text-[#1e1a16]">{item.title}</h3>
                   <p className="mt-4 text-base leading-7 text-[#4a3428]">{item.text}</p>
                   <div className="mt-8 h-px bg-[#4a3428]/15" />
-                  <p className="mt-4 text-sm font-semibold text-[#2f5d3a]">Mas visibilidad · mas confianza · mas consultas</p>
+                  <p className="mt-4 text-sm font-semibold text-[#2f5d3a]">Más visibilidad · más confianza · más consultas</p>
                 </article>
               )
             })}
@@ -213,7 +213,7 @@ export function EditorialHome() {
               Una ruta digital por el valle
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#f5ebdd]">
-              Cada localidad tiene su ritmo, su temporada y su forma de recibir visitantes. La presencia online tambien deberia sentirse local.
+              Cada localidad tiene su ritmo, su temporada y su forma de recibir visitantes. La presencia online también debería sentirse local.
             </p>
           </div>
           <div className="relative min-h-[28rem] rounded-[2rem] border border-[#fff9ef]/15 bg-[#f5ebdd] p-6 text-[#1e1a16] shadow-2xl">
@@ -240,7 +240,7 @@ export function EditorialHome() {
                 Ruta de visibilidad local
               </div>
               <p className="mt-2 text-sm leading-6 text-[#f5ebdd]">
-                Google Maps, fotos, reseñas, web y WhatsApp conectados para que el turista tenga menos dudas y mas caminos para escribir.
+                Google Maps, fotos, reseñas, web y WhatsApp conectados para que el turista tenga menos dudas y más caminos para escribir.
               </p>
             </div>
           </div>
@@ -256,7 +256,7 @@ export function EditorialHome() {
                 Sumar mi negocio al mapa
               </h2>
               <p className="mt-6 text-lg leading-8 text-[#4a3428]">
-                No empezamos vendiendo un paquete. Primero miramos tu lugar, tu zona, como aparece online y que puede mejorar para recibir mas consultas.
+                No empezamos vendiendo un paquete. Primero miramos tu lugar, tu zona, cómo aparece online y qué puede mejorar para recibir más consultas.
               </p>
               <Button
                 size="lg"
@@ -264,7 +264,7 @@ export function EditorialHome() {
                 onClick={() => window.open(config.whatsapp.link("Hola! Quiero sumar mi negocio al mapa"), "_blank")}
               >
                 <MessageCircle className="h-5 w-5" aria-hidden="true" />
-                Pedir diagnostico gratis
+                Pedir diagnóstico gratis
               </Button>
             </div>
             <div className="grid gap-4">
@@ -294,7 +294,7 @@ export function EditorialHome() {
               </h2>
             </div>
             <p className="text-lg leading-8 text-[#4a3428]">
-              No son paquetes frios. Son recorridos simples para ordenar tu presencia digital con tonada local: mas claro para Google, mas facil para tus clientes.
+              No son paquetes fríos. Son recorridos simples para ordenar tu presencia digital con tonada local: más claro para Google, más fácil para tus clientes.
             </p>
           </div>
           <div className="grid gap-5 lg:grid-cols-3">
@@ -336,10 +336,10 @@ export function EditorialHome() {
           <div>
             <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-[#d97732]">Herramientas del mapa</p>
             <h2 className="font-serif text-4xl font-semibold leading-tight text-[#1e1a16] md:text-6xl">
-              Todo lo que ayuda a que tu negocio sea mas facil de descubrir
+              Todo lo que ayuda a que tu negocio sea más fácil de descubrir
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#4a3428]">
-              Redes, fotos, perfiles, diseno y automatizaciones como piezas de una misma guia. Sin vueltas tecnicas.
+              Redes, fotos, perfiles, diseño y automatizaciones como piezas de una misma guía. Sin vueltas técnicas.
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -384,10 +384,10 @@ export function EditorialHome() {
         <div className="container relative z-10 max-w-4xl">
           <Route className="mx-auto mb-6 h-10 w-10 text-[#facc15]" aria-hidden="true" />
           <h2 className="font-serif text-4xl font-semibold leading-tight md:text-6xl">
-            Tu lugar tambien puede ser parte de la guia digital del valle
+            Tu lugar también puede ser parte de la guía digital del valle
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#f5ebdd]">
-            Si tu negocio vive del turismo, la ubicacion y la confianza, hagamos que sea mas facil encontrarte, entenderte y escribirte.
+            Si tu negocio vive del turismo, la ubicación y la confianza, hagamos que sea más fácil encontrarte, entenderte y escribirte.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button

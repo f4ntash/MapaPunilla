@@ -5,19 +5,19 @@ Documentar la arquitectura minima de Mapa Punilla para orientar cambios futuros 
 
 ## Estructura
 - `app/`: rutas Next.js App Router, metadata, sitemap, robots y layout global.
-- `components/`: componentes React agrupados por pagina o dominio visual.
+- `components/`: componentes React agrupados por página o dominio visual.
 - `data/`: contenido y configuracion editorial tipada en TypeScript.
 - `lib/`: helpers compartidos de configuracion, SEO, clases CSS y hooks.
-- `public/`: assets publicos livianos y `manifest.json`.
-- `project-docs/`: documentacion tecnica corta.
+- `public/`: assets públicos livianos y `manifest.json`.
+- `project-docs/`: documentación técnica corta.
 
 ## Flujos principales
 - Home: `app/page.tsx` compone secciones desde `components/home/*`.
-- Rutas comerciales: paginas en `app/servicios`, `app/precios`, `app/nosotros`, `app/contacto`.
+- Rutas comerciales: páginas en `app/servicios`, `app/precios`, `app/nosotros`, `app/contacto`.
 - Landing SEO: rutas bajo `app/servicios/*/page.tsx` pasan copy y FAQs a `components/services/seo-landing.tsx`.
 - Blog: `data/blog.ts` alimenta `/blog` y `/blog/[slug]` con generacion estatica.
 - Contacto: `components/contact/contact-form.tsx` abre WhatsApp con texto precargado.
-- SEO tecnico: `app/layout.tsx`, `lib/seo.ts`, `app/sitemap.ts` y `app/robots.ts`.
+- SEO técnico: `app/layout.tsx`, `lib/seo.ts`, `app/sitemap.ts` y `app/robots.ts`.
 
 ## Estado global
 - No hay store global.
@@ -29,7 +29,7 @@ Documentar la arquitectura minima de Mapa Punilla para orientar cambios futuros 
 - App Router de Next.js con Server Components por defecto.
 - Usar `"use client"` solo cuando hay estado, efectos o APIs del navegador.
 - Contenido reusable vive en `data/`; helpers en `lib/`.
-- SEO por pagina con `buildMetadata`.
+- SEO por página con `buildMetadata`.
 - No agregar dependencias sin permiso.
 
 ## Tecnologias usadas
@@ -41,7 +41,7 @@ Documentar la arquitectura minima de Mapa Punilla para orientar cambios futuros 
 
 ## Archivos importantes
 - `app/layout.tsx`: layout global, metadata base, JSON-LD principal y CTAs persistentes.
-- `app/page.tsx`: composicion de home.
+- `app/page.tsx`: composición de home.
 - `lib/config.ts`: datos de sitio, WhatsApp, precios y zonas.
 - `lib/seo.ts`: metadata, JSON-LD, sitemap pages y ubicaciones.
 - `data/services.ts`: servicios comerciales.

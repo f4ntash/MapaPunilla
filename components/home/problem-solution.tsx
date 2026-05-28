@@ -10,17 +10,17 @@ const problems = [
     icon: SearchX,
     title: "Te buscan, pero encuentran a otro",
     description:
-      "En Google Maps aparecen competidores con mejores fotos, mas resenas o una ficha mas completa.",
+      "En Google Maps aparecen competidores con mejores fotos, más reseñas o una ficha más completa.",
   },
   {
     icon: Percent,
     title: "Pagas comisiones por cada reserva",
     description:
-      "Las plataformas ayudan, pero tambien se quedan con una parte grande de lo que ganaste.",
+      "Las plataformas ayudan, pero también se quedan con una parte grande de lo que ganaste.",
   },
   {
     icon: Clock,
-    title: "Perdes consultas por responder tarde",
+    title: "Perdés consultas por responder tarde",
     description:
       "Si una persona pregunta por WhatsApp y no recibe respuesta clara, sigue buscando.",
   },
@@ -31,7 +31,7 @@ const solutions = [
     icon: CheckCircle,
     title: "Ordenamos tu presencia online",
     description:
-      "Mejoramos Google, web, WhatsApp, fotos y mensajes para que tu negocio se entienda rapido.",
+      "Mejoramos Google, web, WhatsApp, fotos y mensajes para que tu negocio se entienda rápido.",
   },
   {
     icon: CheckCircle,
@@ -41,15 +41,15 @@ const solutions = [
   },
   {
     icon: CheckCircle,
-    title: "Te acompanamos paso a paso",
+    title: "Te acompañamos paso a paso",
     description:
       "Explicamos simple que hacemos, por que lo hacemos y como medir si esta funcionando.",
   },
 ]
 
 const objections = [
-  "No se si esto me sirve.",
-  "Ya publique en redes y no funciono.",
+  "No sé si esto me sirve.",
+  "Ya publiqué en redes y no funcionó.",
   "No entiendo de marketing.",
   "No quiero gastar sin saber si vuelve.",
   "Mi negocio es chico.",
@@ -63,7 +63,7 @@ export function ProblemSolution() {
       <SectionHeader
         badge="Problema comun"
         title="Tu negocio puede ser muy bueno y aun asi no recibir consultas"
-        subtitle="Hoy la primera impresion suele pasar en Google, Maps, WhatsApp o una web. Si ahi no se ve claro y confiable, el cliente elige otra opcion."
+        subtitle="Hoy la primera impresión suele pasar en Google, Maps, WhatsApp o una web. Si ahí no se ve claro y confiable, el cliente elige otra opción."
       />
 
       <div
@@ -101,7 +101,7 @@ export function ProblemSolution() {
         <div className="space-y-4">
           <h3 className="text-lg md:text-xl font-bold text-emerald-700 flex items-center gap-3">
             <span className="w-8 h-0.5 bg-emerald-600" aria-hidden="true" />
-            Como lo resolvemos
+            Cómo lo resolvemos
           </h3>
           {solutions.map((item, i) => {
             const Icon = item.icon
@@ -129,7 +129,7 @@ export function ProblemSolution() {
           <HelpCircle className="w-6 h-6 text-emerald-600 mt-1" aria-hidden="true" />
           <div>
             <h3 className="text-lg md:text-xl font-bold text-stone-800">
-              Si tenes dudas, empezamos por un diagnostico gratis
+              Si tenés dudas, empezamos por un diagnóstico gratis
             </h3>
             <p className="text-sm md:text-base text-stone-600 mt-1">
               Miramos tu negocio, te decimos que mejoraria primero y te explicamos cada paso sin tecnicismos.
@@ -148,7 +148,7 @@ export function ProblemSolution() {
       <div className="mt-6 grid gap-4 md:grid-cols-3">
         {[
           ["1. Miramos tu negocio", "Revisamos Google, web, redes, WhatsApp, fotos y competencia local."],
-          ["2. Priorizamos lo importante", "Te decimos que conviene hacer primero segun tu rubro y temporada."],
+          ["2. Priorizamos lo importante", "Te decimos que conviene hacer primero según tu rubro y temporada."],
           ["3. Ejecutamos y medimos", "Aplicamos mejoras y seguimos consultas, reservas y caminos de contacto."],
         ].map(([title, text]) => (
           <div key={title} className="rounded-2xl bg-[#fffaf0] border border-amber-200 p-5">

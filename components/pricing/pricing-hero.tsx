@@ -8,11 +8,11 @@ export function PricingHero() {
             Rutas y paradas
           </p>
           <h1 className="font-serif text-5xl font-semibold leading-[0.98] md:text-7xl">
-            Elegi una ruta para que tu negocio sea mas facil de encontrar
+            Elegí una ruta para que tu negocio sea más fácil de encontrar
           </h1>
         </div>
         <p className="text-lg leading-8 text-[#4a3428]">
-          Planes con lenguaje simple, pensados para negocios reales del valle. Tu negocio merece ser encontrado, sin vueltas tecnicas.
+          Planes con lenguaje simple, pensados para negocios reales del valle. Tu negocio merece ser encontrado, sin vueltas técnicas.
         </p>
       </div>
     </section>

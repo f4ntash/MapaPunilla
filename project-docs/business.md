@@ -682,7 +682,7 @@ Meta: 30+ fotos propias subidas. Actualizar 2 fotos nuevas por semana.
 14. "Lo que diferencia a un negocio local que domina Google del que lucha por aparecer."
 15. "Un año posicionando negocios en Punilla: los resultados reales en números."
 16. "La conversación que más me marcó con un dueño de cabaña en el valle."
-17. "No se trata de la tecnología. Se trata de la confianza. Así trabajo con mis clientes."
+17. "No sé trata de la tecnología. Se trata de la confianza. Así trabajo con mis clientes."
 18. "El principio que guía todo lo que hacemos en Mapa Punilla."
 19. "Por qué el marketing local para turismo es diferente a cualquier otro marketing."
 20. "El futuro del marketing local en destinos turísticos como Punilla: lo que viene."

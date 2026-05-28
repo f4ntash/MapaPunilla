@@ -34,7 +34,7 @@ export function Navbar() {
     >
       <nav
         className="container flex h-16 md:h-18 items-center justify-between"
-        aria-label="Navegacion principal"
+        aria-label="Navegación principal"
       >
         <Link
           href="/"
@@ -70,10 +70,10 @@ export function Navbar() {
           <Button
             variant="whatsapp"
             size="sm"
-            aria-label="Pedir diagnostico gratis por WhatsApp"
-            onClick={() => window.open(config.whatsapp.link("Hola! Quiero un diagnostico gratis"), "_blank")}
+            aria-label="Pedir diagnóstico gratis por WhatsApp"
+            onClick={() => window.open(config.whatsapp.link("Hola! Quiero un diagnóstico gratis"), "_blank")}
           >
-            Diagnostico gratis
+            Diagnóstico gratis
           </Button>
         </div>
 
@@ -81,7 +81,7 @@ export function Navbar() {
           type="button"
           className="md:hidden flex items-center justify-center w-11 h-11 rounded-xl text-stone-800 hover:bg-amber-100 transition-colors"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label={isOpen ? "Cerrar menu de navegacion" : "Abrir menu de navegacion"}
+          aria-label={isOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
           aria-expanded={isOpen}
           aria-controls="mobile-navigation"
         >
@@ -122,13 +122,13 @@ export function Navbar() {
             <Button
               variant="whatsapp"
               className="w-full h-12"
-              aria-label="Pedir diagnostico gratis por WhatsApp"
+              aria-label="Pedir diagnóstico gratis por WhatsApp"
               onClick={() => {
                 setIsOpen(false)
-                window.open(config.whatsapp.link("Hola! Quiero un diagnostico gratis"), "_blank")
+                window.open(config.whatsapp.link("Hola! Quiero un diagnóstico gratis"), "_blank")
               }}
             >
-              Pedir diagnostico gratis
+              Pedir diagnóstico gratis
             </Button>
           </div>
         </div>

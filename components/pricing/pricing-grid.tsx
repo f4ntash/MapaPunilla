@@ -12,7 +12,7 @@ export function PricingGrid() {
             Rutas principales
           </p>
           <h2 className="font-serif text-4xl font-semibold leading-tight text-[#1e1a16] md:text-6xl">
-            De la busqueda al WhatsApp
+            De la búsqueda al WhatsApp
           </h2>
         </div>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4 items-start">

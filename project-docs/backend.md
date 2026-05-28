@@ -6,7 +6,7 @@ Registrar el estado backend actual para evitar buscar APIs inexistentes.
 ## Estructura
 - No hay backend Express/Mongo en este repo.
 - No hay carpeta `server`, `api` propia, modelos, controladores ni conexion a base de datos.
-- La app corre como Next.js frontend con rutas de pagina y rutas metadata (`sitemap`, `robots`).
+- La app corre como Next.js frontend con rutas de página y rutas metadata (`sitemap`, `robots`).
 
 ## Flujos principales
 - Contacto no persiste datos: `ContactForm` abre WhatsApp con mensaje precargado.

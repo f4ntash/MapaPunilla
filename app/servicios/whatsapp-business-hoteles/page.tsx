@@ -11,9 +11,9 @@ const meta = {
     "whatsapp business hoteles",
     "whatsapp business cabañas",
     "whatsapp hotel carlos paz",
-    "automatizacion whatsapp turismo",
+    "automatización whatsapp turismo",
     "chatbot whatsapp hotel",
-    "atencion al cliente whatsapp",
+    "atención al cliente whatsapp",
   ],
 }
 

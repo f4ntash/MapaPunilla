@@ -6,22 +6,22 @@ import { cn } from "@/lib/utils"
 
 const faqItems = [
   {
-    question: "No se que ruta necesita mi negocio.",
+    question: "No sé qué ruta necesita mi negocio.",
     answer:
-      "Empezamos con un diagnostico gratis. Miramos como apareces hoy y te decimos que parada conviene tomar primero.",
+      "Empezamos con un diagnóstico gratis. Miramos cómo apareces hoy y te decimos qué parada conviene tomar primero.",
   },
   {
-    question: "Mi negocio es chico. Sirve igual?",
+    question: "¿Mi negocio es chico. Sirve igual?",
     answer:
-      "Si. Las rutas estan pensadas para cabanas, restaurantes, hoteles chicos y emprendimientos que necesitan orden y consultas reales.",
+      "Sí. Las rutas están pensadas para cabañas, restaurantes, hoteles chicos y emprendimientos que necesitan orden y consultas reales.",
   },
   {
-    question: "Las automatizaciones reemplazan la atencion humana?",
+    question: "¿Las automatizaciones reemplazan la atención humana?",
     answer:
-      "No. Solo ayudan con respuestas basicas y derivan a una persona cuando hace falta. La idea es responder mejor, no sonar frio.",
+      "No. Solo ayudan con respuestas básicas y derivan a una persona cuando hace falta. La idea es responder mejor, no sonar frío.",
   },
   {
-    question: "Hay contrato largo?",
+    question: "¿Hay contrato largo?",
     answer:
       "No. Trabajamos con etapas claras para que entiendas que se hace, para que sirve y que conviene ajustar.",
   },

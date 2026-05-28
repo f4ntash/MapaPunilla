@@ -11,27 +11,27 @@ export function ServicesCTA() {
       <div className="container relative z-10 max-w-3xl text-center">
         <Route className="mx-auto mb-6 h-10 w-10 text-[#facc15]" aria-hidden="true" />
         <h2 className="font-serif text-4xl font-semibold leading-tight md:text-6xl">
-          No sabes que parada tomar primero?
+          ¿No sabés qué parada tomar primero?
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#f5ebdd]">
-          Miramos tu negocio, tu localidad y como te encuentran hoy. Despues te proponemos una ruta simple, sin vueltas tecnicas.
+          Miramos tu negocio, tu localidad y cómo te encuentran hoy. Después te proponemos una ruta simple, sin vueltas técnicas.
         </p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <Button
             size="lg"
             className="h-13 gap-2 rounded-full bg-[#facc15] px-7 text-[#1e1a16] hover:bg-[#f5b51b]"
-            aria-label="Pedir diagnostico gratis por WhatsApp"
-            onClick={() => window.open(config.whatsapp.link("Hola! Quiero saber que necesita mi negocio"), "_blank")}
+            aria-label="Pedir diagnóstico gratis por WhatsApp"
+            onClick={() => window.open(config.whatsapp.link("Hola! Quiero saber qué necesita mi negocio"), "_blank")}
           >
             <MessageCircle className="h-5 w-5" aria-hidden="true" />
-            Pedir diagnostico gratis
+            Pedir diagnóstico gratis
           </Button>
           <Button
             size="lg"
             variant="outline"
             className="h-13 gap-2 rounded-full border-[#fff9ef] bg-transparent px-7 text-[#fff9ef] hover:bg-[#fff9ef] hover:text-[#1e1a16]"
             aria-label="Consultar herramientas para mi negocio"
-            onClick={() => window.open(config.whatsapp.link("Tengo dudas sobre que herramienta necesito"), "_blank")}
+            onClick={() => window.open(config.whatsapp.link("Tengo dudas sobre qué herramienta necesito"), "_blank")}
           >
             Tengo dudas
             <ArrowRight className="h-4 w-4" aria-hidden="true" />

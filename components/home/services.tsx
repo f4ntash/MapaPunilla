@@ -10,7 +10,7 @@ export function Services() {
       <SectionHeader
         badge="Servicios"
         title="Mejoramos lo que la gente ve antes de contactarte"
-        subtitle="Google, pagina web, WhatsApp, fotos, resenas y publicidad local trabajando con un mismo objetivo: mas consultas para tu negocio."
+        subtitle="Google, página web, WhatsApp, fotos, reseñas y publicidad local trabajando con un mismo objetivo: más consultas para tu negocio."
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -37,9 +37,9 @@ export function Services() {
               <Link
                 href="/servicios"
                 className="text-sm font-medium text-emerald-700 hover:text-emerald-800 inline-flex items-center gap-1 group/link focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 rounded-md"
-                aria-label={`Ver mas sobre ${service.shortTitle}`}
+                aria-label={`Ver más sobre ${service.shortTitle}`}
               >
-                Ver mas
+                Ver más
                 <ArrowRight className="w-3 h-3 transition-transform group-hover/link:translate-x-0.5" aria-hidden="true" />
               </Link>
             </div>

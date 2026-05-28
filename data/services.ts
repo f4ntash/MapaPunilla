@@ -16,20 +16,20 @@ export interface Service {
 export const services: Service[] = [
   {
     id: "google-maps",
-    title: "Google Maps mas completo y confiable",
+    title: "Google Maps más completo y confiable",
     shortTitle: "Google Maps",
     description:
-      "Mejoramos tu ficha para que turistas y vecinos entiendan rapido que ofreces, donde estas y como contactarte.",
+      "Mejoramos tu ficha para que turistas y vecinos entiendan rápido qué ofrecés, dónde estás y cómo contactarte.",
     problem:
-      "Si tu ficha tiene pocas fotos, datos incompletos o malas resenas, la gente duda y sigue mirando.",
+      "Si tu ficha tiene pocas fotos, datos incompletos o malas reseñas, la gente duda y sigue mirando.",
     result:
-      "Tu negocio se ve mas profesional y queda listo para recibir mas llamadas, mensajes e indicaciones.",
+      "Tu negocio se ve más profesional y queda listo para recibir más llamadas, mensajes e indicaciones.",
     icon: Map,
     features: [
       "Perfil de Google Business optimizado",
-      "Datos, categorias y textos claros",
-      "Fotos y llamados a la accion",
-      "Mejoras para busquedas locales",
+      "Datos, categorías y textos claros",
+      "Fotos y llamados a la acción",
+      "Mejoras para búsquedas locales",
     ],
     gradient: "from-emerald-600 to-green-500",
   },
@@ -38,11 +38,11 @@ export const services: Service[] = [
     title: "SEO local para Punilla",
     shortTitle: "SEO Local",
     description:
-      "Trabajamos las busquedas que importan para tu zona: cabanas, hoteles, restaurantes, bares y servicios turisticos.",
+      "Trabajamos las búsquedas que importan para tu zona: cabañas, hoteles, restaurantes, bares y servicios turísticos.",
     problem:
-      "Tus competidores aparecen antes en Villa Carlos Paz, Cosquin, La Falda o Capilla del Monte.",
+      "Tus competidores aparecen antes en Villa Carlos Paz, Cosquín, La Falda o Capilla del Monte.",
     result:
-      "Mas visibilidad en Google y mas oportunidades de consulta cuando la gente esta buscando.",
+      "Más visibilidad en Google y más oportunidades de consulta cuando la gente está buscando.",
     icon: Search,
     features: [
       "Keywords locales por localidad",
@@ -57,15 +57,15 @@ export const services: Service[] = [
     title: "WhatsApp preparado para vender mejor",
     shortTitle: "WhatsApp Business",
     description:
-      "Ordenamos tu WhatsApp para responder mas claro, mas rapido y con mensajes que ayuden a cerrar consultas.",
+      "Ordenamos tu WhatsApp para responder más claro, más rápido y con mensajes que ayuden a cerrar consultas.",
     problem:
-      "Muchas consultas se pierden por respuestas tardias, mensajes confusos o falta de informacion.",
+      "Muchas consultas se pierden por respuestas tardías, mensajes confusos o falta de información.",
     result:
-      "El cliente recibe una respuesta mas clara y vos tenes un proceso mas simple para atender.",
+      "El cliente recibe una respuesta más clara y vos tenés un proceso más simple para atender.",
     icon: MessageSquare,
     features: [
       "Perfil profesional de WhatsApp",
-      "Respuestas rapidas",
+      "Respuestas rápidas",
       "Mensajes de bienvenida",
       "Botones directos desde web y Google",
     ],
@@ -73,19 +73,19 @@ export const services: Service[] = [
   },
   {
     id: "landing-pages",
-    title: "Paginas web para conseguir consultas",
-    shortTitle: "Paginas Web",
+    title: "Páginas web para conseguir consultas",
+    shortTitle: "Páginas Web",
     description:
-      "Creamos landings simples, rapidas y claras para que tu negocio se vea profesional y convierta visitas en mensajes.",
+      "Creamos landings simples, rápidas y claras para que tu negocio se vea profesional y convierta visitas en mensajes.",
     problem:
-      "Una web lenta, vieja o confusa puede hacer que el cliente no confie o no sepa como reservar.",
+      "Una web lenta, vieja o confusa puede hacer que el cliente no confíe o no sepa cómo reservar.",
     result:
-      "Una pagina enfocada en mostrar valor, responder dudas y llevar al usuario a WhatsApp.",
+      "Una página enfocada en mostrar valor, responder dudas y llevar al usuario a WhatsApp.",
     icon: CalendarCheck,
     features: [
       "Landing responsive",
-      "Copy orientado a conversion",
-      "SEO tecnico basico",
+      "Copy orientado a conversión",
+      "SEO técnico básico",
       "Botones de reserva y contacto",
     ],
     gradient: "from-blue-600 to-cyan-500",
@@ -99,13 +99,13 @@ export const services: Service[] = [
     problem:
       "Responder siempre lo mismo cansa y te saca tiempo de atender el negocio.",
     result:
-      "Tus respuestas son mas rapidas y ordenadas, sin perder el trato humano cuando hace falta.",
+      "Tus respuestas son más rápidas y ordenadas, sin perder el trato humano cuando hace falta.",
     icon: Bot,
     features: [
       "Respuestas frecuentes",
       "Mensajes de seguimiento",
       "Recordatorios",
-      "Flujos simples de atencion",
+      "Flujos simples de atención",
     ],
     gradient: "from-violet-600 to-purple-500",
   },
@@ -114,55 +114,55 @@ export const services: Service[] = [
     title: "Publicidad para temporada",
     shortTitle: "Google Ads",
     description:
-      "Campanas puntuales para aparecer cuando la gente busca alojamiento, comida o actividades en Punilla.",
+      "Campañas puntuales para aparecer cuando la gente busca alojamiento, comida o actividades en Punilla.",
     problem:
       "Gastar en publicidad sin foco puede traer visitas que no consultan.",
     result:
-      "Avisos orientados a busquedas con intencion real y seguimiento de consultas.",
+      "Avisos orientados a búsquedas con intención real y seguimiento de consultas.",
     icon: BarChart3,
     features: [
-      "Campanas por zona",
-      "Anuncios para busquedas locales",
+      "Campañas por zona",
+      "Anuncios para búsquedas locales",
       "Control de presupuesto",
-      "Medicion de contactos",
+      "Medición de contactos",
     ],
     gradient: "from-red-600 to-rose-500",
   },
   {
     id: "reviews",
-    title: "Mas confianza con resenas",
-    shortTitle: "Resenas",
+    title: "Más confianza con reseñas",
+    shortTitle: "Reseñas",
     description:
-      "Te ayudamos a pedir, ordenar y responder resenas para que tu negocio transmita confianza.",
+      "Te ayudamos a pedir, ordenar y responder reseñas para que tu negocio transmita confianza.",
     problem:
-      "Pocas resenas o respuestas descuidadas hacen que el cliente dude.",
+      "Pocas reseñas o respuestas descuidadas hacen que el cliente dude.",
     result:
-      "Mas prueba social y una imagen mas seria frente a turistas y vecinos.",
+      "Más prueba social y una imagen más seria frente a turistas y vecinos.",
     icon: Star,
     features: [
-      "Sistema para pedir resenas",
+      "Sistema para pedir reseñas",
       "Respuestas profesionales",
       "Alertas y seguimiento",
-      "Mejora de reputacion local",
+      "Mejora de reputación local",
     ],
     gradient: "from-yellow-500 to-orange-500",
   },
   {
     id: "photography",
     title: "Fotos que hacen elegir tu negocio",
-    shortTitle: "Fotografia",
+    shortTitle: "Fotografía",
     description:
-      "Mostramos tu espacio, platos, habitaciones o productos con imagenes mas claras y vendibles.",
+      "Mostramos tu espacio, platos, habitaciones o productos con imágenes más claras y vendibles.",
     problem:
       "Fotos oscuras o viejas bajan la confianza, aunque el lugar sea excelente.",
     result:
-      "Tu negocio se ve mas profesional en Google, web, redes y WhatsApp.",
+      "Tu negocio se ve más profesional en Google, web, redes y WhatsApp.",
     icon: Camera,
     features: [
       "Fotos para Google Maps",
-      "Imagenes para web",
+      "Imágenes para web",
       "Contenido para redes",
-      "Seleccion de fotos clave",
+      "Selección de fotos clave",
     ],
     gradient: "from-sky-600 to-indigo-500",
   },
@@ -175,7 +175,7 @@ export const services: Service[] = [
     problem:
       "Publicar sin idea clara consume tiempo y muchas veces no genera consultas.",
     result:
-      "Redes mas ordenadas, humanas y conectadas con lo que la gente quiere saber antes de escribir.",
+      "Redes más ordenadas, humanas y conectadas con lo que la gente quiere saber antes de escribir.",
     icon: MessageSquare,
     features: [
       "Calendario simple",
@@ -187,14 +187,14 @@ export const services: Service[] = [
   },
   {
     id: "content-design",
-    title: "Diseno de contenido",
+    title: "Diseño de contenido",
     shortTitle: "Contenido",
     description:
       "Piezas visuales para redes, historias, destacados y promociones que se sientan propias de tu negocio.",
     problem:
       "Una imagen improvisada puede hacer que un lugar lindo parezca poco cuidado.",
     result:
-      "Tu comunicacion se ve mas prolija, local y facil de recordar.",
+      "Tu comunicación se ve más prolija, local y fácil de recordar.",
     icon: Palette,
     features: [
       "Plantillas visuales",
@@ -213,7 +213,7 @@ export const services: Service[] = [
     problem:
       "Muchos negocios se ven parecidos y cuesta recordar cual era cual.",
     result:
-      "Una presencia con personalidad, mas reconocible y mas conectada con Punilla.",
+      "Una presencia con personalidad, más reconocible y más conectada con Punilla.",
     icon: Store,
     features: [
       "Tono de marca",
@@ -232,7 +232,7 @@ export const services: Service[] = [
     problem:
       "Cuando cada canal dice algo distinto, el cliente se confunde.",
     result:
-      "Un recorrido mas claro desde la ruta, el mapa, Instagram o WhatsApp.",
+      "Un recorrido más claro desde la ruta, el mapa, Instagram o WhatsApp.",
     icon: Megaphone,
     features: [
       "Piezas para promos",

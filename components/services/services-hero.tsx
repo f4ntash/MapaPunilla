@@ -8,11 +8,11 @@ export function ServicesHero() {
             Guia de herramientas
           </p>
           <h1 className="font-serif text-5xl font-semibold leading-[0.98] md:text-7xl">
-            Herramientas para que tu negocio sea mas facil de descubrir
+            Herramientas para que tu negocio sea más fácil de descubrir
           </h1>
         </div>
         <p className="text-lg leading-8 text-[#4a3428]">
-          Google Maps, fotos, redes, webs simples, contenido, branding local y automatizaciones. Todo conectado como una guia digital del valle.
+          Google Maps, fotos, redes, webs simples, contenido, branding local y automatizaciones. Todo conectado como una guía digital del valle.
         </p>
       </div>
     </section>

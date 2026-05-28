@@ -16,7 +16,7 @@ export function AutomationPlans() {
             Automatizaciones
           </p>
           <h2 className="font-serif text-4xl font-semibold leading-tight md:text-6xl">
-            Respuestas utiles cuando el valle esta en movimiento
+            Respuestas útiles cuando el valle esta en movimiento
           </h2>
           <p className="mt-5 text-lg leading-8 text-[#f5ebdd]">
             Sin robots raros ni promesas futuristas. Solo ayudas simples para responder mejor, ordenar consultas y no perder mensajes.

@@ -14,7 +14,7 @@ export function Pricing() {
       <SectionHeader
         badge="Planes"
         title="Planes claros para empezar sin miedo"
-        subtitle="Primero entendemos tu negocio. Despues priorizamos lo que mas puede ayudarte a recibir consultas, reservas o visitas."
+        subtitle="Primero entendemos tu negocio. Después priorizamos lo que más puede ayudarte a recibir consultas, reservas o visitas."
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-start">
@@ -114,7 +114,7 @@ export function Pricing() {
                   window.open(config.whatsapp.link(plan.whatsapp), "_blank")
                 } else {
                   window.open(
-                    config.whatsapp.link("Quiero informacion sobre sus planes"),
+                    config.whatsapp.link("Quiero información sobre sus planes"),
                     "_blank"
                   )
                 }

@@ -4,7 +4,7 @@ export const config = {
     name: process.env.NEXT_PUBLIC_SITE_NAME || "Mapa Punilla",
     description:
       process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
-      "Marketing digital, SEO local y paginas web para negocios turisticos del Valle de Punilla.",
+      "Marketing digital, SEO local y páginas web para negocios turísticos del Valle de Punilla.",
   },
   whatsapp: {
     number: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "543541638826",
@@ -24,7 +24,7 @@ export const config = {
     process.env.NEXT_PUBLIC_PHONE_DISPLAY || "3541 638826",
   email: process.env.NEXT_PUBLIC_EMAIL || "matiasgerstner@gmail.com",
   location:
-    process.env.NEXT_PUBLIC_LOCATION || "Villa Carlos Paz, Cordoba, Argentina",
+    process.env.NEXT_PUBLIC_LOCATION || "Villa Carlos Paz, Córdoba, Argentina",
   prices: {
     basic: Number(process.env.NEXT_PUBLIC_PRICE_BASIC) || 49000,
     pro: Number(process.env.NEXT_PUBLIC_PRICE_PRO) || 90000,
@@ -35,14 +35,14 @@ export const config = {
   },
   zones: [
     "Villa Carlos Paz",
-    "Cosquin",
+    "Cosquín",
     "La Falda",
     "Capilla del Monte",
     "Tanti",
-    "Bialet Masse",
-    "Santa Maria de Punilla",
+    "Bialet Massé",
+    "Santa María de Punilla",
     "Huerta Grande",
     "Valle de Punilla",
-    "Cordoba",
+    "Córdoba",
   ],
 } as const

@@ -9,16 +9,16 @@ import { config } from "@/lib/config"
 
 const zones = [
   "Villa Carlos Paz",
-  "Cosquin",
+  "Cosquín",
   "La Falda",
   "Capilla del Monte",
   "Tanti",
-  "Bialet Masse",
-  "Santa Maria de Punilla",
+  "Bialet Massé",
+  "Santa María de Punilla",
   "Huerta Grande",
 ]
 
-const businessTypes = ["Cabanas", "Hoteles chicos", "Restaurantes", "Bares", "Alquileres temporarios"]
+const businessTypes = ["Cabañas", "Hoteles chicos", "Restaurantes", "Bares", "Alquileres temporarios"]
 
 export function Hero() {
   const { ref, isInView } = useInView()
@@ -41,38 +41,38 @@ export function Hero() {
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-amber-200/30 bg-amber-50/10 px-4 py-2 text-xs md:text-sm font-semibold text-amber-100 mb-6">
             <Mountain className="w-4 h-4" aria-hidden="true" />
-            Marketing local para negocios turisticos de Punilla
+            Marketing local para negocios turísticos de Punilla
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.08]">
-            Mas consultas, reservas y clientes para tu negocio en Punilla
+            Más consultas, reservas y clientes para tu negocio en Punilla
           </h1>
 
           <p className="text-lg md:text-xl text-amber-50 max-w-3xl mx-auto mb-8 md:mb-10 leading-relaxed">
-            Te ayudamos a que tu cabana, hotel, restaurante, bar o emprendimiento local se vea profesional, aparezca mejor cuando los turistas buscan y convierta mas visitas en mensajes por WhatsApp.
+            Te ayudamos a que tu cabaña, hotel, restaurante, bar o emprendimiento local se vea profesional, aparezca mejor cuando los turistas buscan y convierta más visitas en mensajes por WhatsApp.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4">
             <Button
               variant="whatsapp"
               size="lg"
-              aria-label="Pedir diagnostico gratis por WhatsApp"
+              aria-label="Pedir diagnóstico gratis por WhatsApp"
               onClick={() =>
                 window.open(
-                  config.whatsapp.link("Hola! Quiero un diagnostico gratis para mi negocio en Punilla"),
+                  config.whatsapp.link("Hola! Quiero un diagnóstico gratis para mi negocio en Punilla"),
                   "_blank"
                 )
               }
               className="w-full sm:w-auto text-sm md:text-base gap-2 h-12 md:h-13 px-6 md:px-8"
             >
               <MessageCircle className="w-5 h-5" aria-hidden="true" />
-              Pedir diagnostico gratis
+              Pedir diagnóstico gratis
             </Button>
             <Link href="/servicios" className="w-full sm:w-auto">
               <Button
                 variant="outline"
                 size="lg"
-                aria-label="Ver servicios para negocios turisticos"
+                aria-label="Ver servicios para negocios turísticos"
                 className="w-full sm:w-auto text-sm md:text-base gap-2 h-12 md:h-13 px-6 md:px-8 bg-amber-50 text-stone-900 border-2 border-amber-200 hover:bg-white hover:shadow-sm"
               >
                 Ver que hacemos por tu negocio
@@ -83,8 +83,8 @@ export function Hero() {
 
           <div className="mt-10 md:mt-14 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-4xl mx-auto text-left">
             {[
-              ["No necesitas entender de marketing", "Te explicamos todo simple y sin vueltas tecnicas."],
-              ["Pensado para negocios chicos y medianos", "Primero vemos que necesita tu negocio y tu zona."],
+              ["No necesitás entender de marketing", "Te explicamos todo simple y sin vueltas técnicas."],
+              ["Pensado para negocios chicos y medianos", "Primero vemos qué necesita tu negocio y tu zona."],
               ["Foco en consultas reales", "Google, web y WhatsApp orientados a reservas y clientes."],
             ].map(([title, text]) => (
               <div key={title} className="rounded-2xl border border-amber-100/20 bg-white/10 p-4 backdrop-blur">
@@ -99,7 +99,7 @@ export function Hero() {
               <div>
                 <div className="flex items-center gap-2 text-sm font-bold text-green-900 mb-3">
                   <Route className="w-4 h-4" aria-hidden="true" />
-                  Hecho para el recorrido turistico del valle
+                  Hecho para el recorrido turístico del valle
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {zones.map((zone) => (

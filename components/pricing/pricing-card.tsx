@@ -104,7 +104,7 @@ export function PricingCard({ plan, index }: PricingCardProps) {
             window.open(config.whatsapp.link(plan.whatsapp), "_blank")
           } else {
             window.open(
-              config.whatsapp.link("Quiero informacion sobre sus planes"),
+              config.whatsapp.link("Quiero información sobre sus planes"),
               "_blank"
             )
           }

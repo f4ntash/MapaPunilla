@@ -25,7 +25,7 @@ export function Footer() {
               <span className="text-lg font-bold text-white">Mapa Punilla</span>
             </Link>
             <p className="text-sm text-amber-100/85 mb-6 max-w-xs">
-              Marketing local para cabanas, hoteles, restaurantes, bares y emprendimientos del Valle de Punilla. Claro, cercano y orientado a consultas reales.
+              Marketing local para cabañas, hoteles, restaurantes, bares y emprendimientos del Valle de Punilla. Claro, cercano y orientado a consultas reales.
             </p>
             <nav aria-label="Redes sociales" className="flex gap-3">
               {socialLinks.map((link) => (
@@ -44,7 +44,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h2 className="text-sm font-bold text-white mb-4 uppercase tracking-wider">Navegacion</h2>
+            <h2 className="text-sm font-bold text-white mb-4 uppercase tracking-wider">Navegación</h2>
             <ul className="space-y-3">
               {navigation.map((item) => (
                 <li key={item.href}>
@@ -59,7 +59,7 @@ export function Footer() {
           <div>
             <h2 className="text-sm font-bold text-white mb-4 uppercase tracking-wider">Servicios</h2>
             <ul className="space-y-3">
-              {["Google Maps", "SEO local", "Paginas web", "WhatsApp", "Publicidad turistica"].map((service) => (
+              {["Google Maps", "SEO local", "Páginas web", "WhatsApp", "Publicidad turística"].map((service) => (
                 <li key={service}>
                   <Link href="/servicios" className="text-sm text-amber-100/85 hover:text-amber-200 transition-colors rounded-md">
                     {service}

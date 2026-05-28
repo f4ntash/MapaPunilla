@@ -18,9 +18,9 @@ const contactDetails = [
   },
   {
     icon: MapPinned,
-    label: "Ubicacion",
+    label: "Ubicación",
     value: config.location,
-    href: "https://maps.google.com/?q=Villa+Carlos+Paz+Cordoba+Argentina",
+    href: "https://maps.google.com/?q=Villa+Carlos+Paz+Córdoba+Argentina",
     action: "Ver en maps",
   },
   {
@@ -34,7 +34,7 @@ export function ContactInfo() {
   return (
     <div>
       <h2 className="text-xl md:text-2xl font-bold text-stone-800 mb-6">
-        Informacion de contacto
+        Información de contacto
       </h2>
 
       <div className="space-y-4">
@@ -73,13 +73,13 @@ export function ContactInfo() {
 
       <div className="mt-6 p-5 md:p-6 rounded-2xl bg-gradient-to-br from-emerald-700 to-emerald-800 text-white">
         <h3 className="font-bold text-base md:text-lg mb-2">
-          Diagnostico gratis
+          Diagnóstico gratis
         </h3>
         <p className="text-sm text-white/90 mb-4">
           Contanos tu rubro y localidad. Te respondemos con una mirada simple sobre que mejorar primero.
         </p>
         <a
-          href={config.whatsapp.link("Hola! Quiero un diagnostico gratis")}
+          href={config.whatsapp.link("Hola! Quiero un diagnóstico gratis")}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white text-emerald-700 hover:bg-emerald-50 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
