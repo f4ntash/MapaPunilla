@@ -1,4 +1,4 @@
-import { BarChart3, Bot, CalendarCheck, Camera, Map, Megaphone, MessageSquare, Palette, Search, Star, Store } from "lucide-react"
+import { Bot, CalendarCheck, Camera, Map, Megaphone, MessageSquare, Palette, Search, Star, Store } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 export interface Service {
@@ -16,216 +16,178 @@ export interface Service {
 export const services: Service[] = [
   {
     id: "google-maps",
-    title: "Google Maps más completo y confiable",
+    title: "Aparecer mejor en Google Maps",
     shortTitle: "Google Maps",
     description:
-      "Mejoramos tu ficha para que turistas y vecinos entiendan rápido qué ofrecés, dónde estás y cómo contactarte.",
+      "Ordenamos tu ficha para que turistas y vecinos entiendan rápido qué ofrecés, dónde estás y cómo escribirte.",
     problem:
-      "Si tu ficha tiene pocas fotos, datos incompletos o malas reseñas, la gente duda y sigue mirando.",
+      "Si tu ficha tiene pocas fotos, datos incompletos o reseñas sin responder, la gente duda y sigue mirando.",
     result:
-      "Tu negocio se ve más profesional y queda listo para recibir más llamadas, mensajes e indicaciones.",
+      "Más claro para Google. Más fácil para tus clientes.",
     icon: Map,
     features: [
-      "Perfil de Google Business optimizado",
-      "Datos, categorías y textos claros",
-      "Fotos y llamados a la acción",
-      "Mejoras para búsquedas locales",
+      "Datos, categorías y horarios claros",
+      "Fotos que ayudan a elegir",
+      "Botones hacia WhatsApp e indicaciones",
+      "Recomendaciones para reseñas",
     ],
     gradient: "from-emerald-600 to-green-500",
   },
   {
     id: "local-seo",
-    title: "SEO local para Punilla",
-    shortTitle: "SEO Local",
+    title: "Ser más fácil de encontrar en Punilla",
+    shortTitle: "Visibilidad local",
     description:
-      "Trabajamos las búsquedas que importan para tu zona: cabañas, hoteles, restaurantes, bares y servicios turísticos.",
+      "Trabajamos búsquedas reales del valle: cabañas, hoteles, restaurantes, bares, complejos y experiencias.",
     problem:
-      "Tus competidores aparecen antes en Villa Carlos Paz, Cosquín, La Falda o Capilla del Monte.",
+      "Muchos negocios buenos no aparecen cuando el turista busca por localidad, rubro o necesidad.",
     result:
-      "Más visibilidad en Google y más oportunidades de consulta cuando la gente está buscando.",
+      "Tu lugar gana contexto local y mejores caminos de descubrimiento.",
     icon: Search,
     features: [
-      "Keywords locales por localidad",
-      "Estructura SEO para web y landings",
-      "Contenido orientado a consultas",
-      "Reportes simples de avance",
+      "Palabras locales usadas con naturalidad",
+      "Landings y contenidos por intención",
+      "Links internos dentro del ecosistema Mapa Punilla",
+      "Guías útiles para turistas y negocios",
     ],
     gradient: "from-orange-500 to-amber-500",
   },
   {
     id: "whatsapp",
-    title: "WhatsApp preparado para vender mejor",
-    shortTitle: "WhatsApp Business",
+    title: "Recibir más consultas por WhatsApp",
+    shortTitle: "WhatsApp",
     description:
-      "Ordenamos tu WhatsApp para responder más claro, más rápido y con mensajes que ayuden a cerrar consultas.",
+      "Dejamos tu WhatsApp preparado para responder mejor, orientar rápido y no perder consultas por falta de claridad.",
     problem:
-      "Muchas consultas se pierden por respuestas tardías, mensajes confusos o falta de información.",
+      "En temporada, una respuesta tarde o incompleta puede mandar al cliente a otra opción.",
     result:
-      "El cliente recibe una respuesta más clara y vos tenés un proceso más simple para atender.",
+      "De la búsqueda al WhatsApp con menos fricción.",
     icon: MessageSquare,
     features: [
-      "Perfil profesional de WhatsApp",
-      "Respuestas rápidas",
-      "Mensajes de bienvenida",
-      "Botones directos desde web y Google",
+      "Perfil y mensajes de bienvenida",
+      "Respuestas rápidas para preguntas frecuentes",
+      "Textos simples para reservas y ubicación",
+      "Botones desde web, Google e Instagram",
     ],
     gradient: "from-emerald-600 to-green-500",
   },
   {
     id: "landing-pages",
-    title: "Páginas web para conseguir consultas",
-    shortTitle: "Páginas Web",
+    title: "Tener una web clara y simple",
+    shortTitle: "Web simple",
     description:
-      "Creamos landings simples, rápidas y claras para que tu negocio se vea profesional y convierta visitas en mensajes.",
+      "Creamos páginas livianas para explicar tu negocio, mostrar confianza y llevar a la persona a consultar.",
     problem:
-      "Una web lenta, vieja o confusa puede hacer que el cliente no confíe o no sepa cómo reservar.",
+      "Una web vieja, lenta o confusa hace que el cliente no entienda cómo reservar o qué incluye tu servicio.",
     result:
-      "Una página enfocada en mostrar valor, responder dudas y llevar al usuario a WhatsApp.",
+      "Una presencia directa, mobile first y conectada a WhatsApp.",
     icon: CalendarCheck,
     features: [
       "Landing responsive",
-      "Copy orientado a conversión",
+      "Texto pensado para turistas",
       "SEO técnico básico",
-      "Botones de reserva y contacto",
+      "Botones de consulta y reserva",
     ],
     gradient: "from-blue-600 to-cyan-500",
   },
   {
     id: "ai-automations",
-    title: "Automatizaciones simples",
+    title: "Automatizar respuestas sin perder trato humano",
     shortTitle: "Automatizaciones",
     description:
-      "Automatizamos respuestas frecuentes, seguimientos y recordatorios para que no pierdas tiempo en lo repetido.",
+      "Armamos respuestas automáticas simples para horarios, ubicación, disponibilidad, precios y consultas repetidas.",
     problem:
       "Responder siempre lo mismo cansa y te saca tiempo de atender el negocio.",
     result:
-      "Tus respuestas son más rápidas y ordenadas, sin perder el trato humano cuando hace falta.",
+      "Nadie queda sin una primera respuesta clara.",
     icon: Bot,
     features: [
-      "Respuestas frecuentes",
-      "Mensajes de seguimiento",
-      "Recordatorios",
-      "Flujos simples de atención",
+      "WhatsApp automático",
+      "Instagram automático",
+      "Derivación a una persona",
+      "Mensajes revisables y humanos",
     ],
     gradient: "from-violet-600 to-purple-500",
   },
   {
-    id: "google-ads",
-    title: "Publicidad para temporada",
-    shortTitle: "Google Ads",
+    id: "content",
+    title: "Crear contenido que la gente quiera guardar",
+    shortTitle: "Contenido",
     description:
-      "Campañas puntuales para aparecer cuando la gente busca alojamiento, comida o actividades en Punilla.",
+      "Diseñamos piezas para mostrar tu lugar, responder dudas y hacer que tu negocio se recuerde.",
     problem:
-      "Gastar en publicidad sin foco puede traer visitas que no consultan.",
+      "Publicar sin idea clara consume tiempo y muchas veces no genera consultas.",
     result:
-      "Avisos orientados a búsquedas con intención real y seguimiento de consultas.",
-    icon: BarChart3,
+      "Redes más útiles, guardables y conectadas con lo que la gente pregunta.",
+    icon: Palette,
     features: [
-      "Campañas por zona",
-      "Anuncios para búsquedas locales",
-      "Control de presupuesto",
-      "Medición de contactos",
-    ],
-    gradient: "from-red-600 to-rose-500",
-  },
-  {
-    id: "reviews",
-    title: "Más confianza con reseñas",
-    shortTitle: "Reseñas",
-    description:
-      "Te ayudamos a pedir, ordenar y responder reseñas para que tu negocio transmita confianza.",
-    problem:
-      "Pocas reseñas o respuestas descuidadas hacen que el cliente dude.",
-    result:
-      "Más prueba social y una imagen más seria frente a turistas y vecinos.",
-    icon: Star,
-    features: [
-      "Sistema para pedir reseñas",
-      "Respuestas profesionales",
-      "Alertas y seguimiento",
-      "Mejora de reputación local",
+      "Ideas por temporada",
+      "Historias y placas",
+      "Textos con tono local",
+      "Puente hacia WhatsApp",
     ],
     gradient: "from-yellow-500 to-orange-500",
   },
   {
     id: "photography",
-    title: "Fotos que hacen elegir tu negocio",
-    shortTitle: "Fotografía",
+    title: "Mejorar cómo se ve tu negocio online",
+    shortTitle: "Fotos",
     description:
-      "Mostramos tu espacio, platos, habitaciones o productos con imágenes más claras y vendibles.",
+      "Mostramos habitaciones, platos, espacios, vistas o productos con imágenes más claras y confiables.",
     problem:
       "Fotos oscuras o viejas bajan la confianza, aunque el lugar sea excelente.",
     result:
-      "Tu negocio se ve más profesional en Google, web, redes y WhatsApp.",
+      "Tu negocio se ve más real, cuidado y fácil de elegir.",
     icon: Camera,
     features: [
       "Fotos para Google Maps",
-      "Imágenes para web",
-      "Contenido para redes",
+      "Imágenes para web y redes",
       "Selección de fotos clave",
+      "Criterios para actualizar por temporada",
     ],
     gradient: "from-sky-600 to-indigo-500",
   },
   {
-    id: "social-management",
-    title: "Manejo de redes con tonada local",
-    shortTitle: "Manejo de redes",
+    id: "reviews",
+    title: "Construir confianza con reseñas",
+    shortTitle: "Reseñas",
     description:
-      "Publicaciones pensadas para mostrar tu lugar, responder dudas y acercar turistas sin hablar dificil.",
+      "Te ayudamos a pedir, ordenar y responder reseñas para que la prueba social trabaje a favor.",
     problem:
-      "Publicar sin idea clara consume tiempo y muchas veces no genera consultas.",
+      "Pocas reseñas o respuestas descuidadas hacen que el cliente dude.",
     result:
-      "Redes más ordenadas, humanas y conectadas con lo que la gente quiere saber antes de escribir.",
-    icon: MessageSquare,
+      "Más confianza antes del primer mensaje.",
+    icon: Star,
     features: [
-      "Calendario simple",
-      "Ideas por temporada",
-      "Textos claros",
-      "Puente hacia WhatsApp",
-    ],
-    gradient: "from-orange-500 to-amber-500",
-  },
-  {
-    id: "content-design",
-    title: "Diseño de contenido",
-    shortTitle: "Contenido",
-    description:
-      "Piezas visuales para redes, historias, destacados y promociones que se sientan propias de tu negocio.",
-    problem:
-      "Una imagen improvisada puede hacer que un lugar lindo parezca poco cuidado.",
-    result:
-      "Tu comunicación se ve más prolija, local y fácil de recordar.",
-    icon: Palette,
-    features: [
-      "Plantillas visuales",
-      "Historias y placas",
-      "Promos de temporada",
-      "Estilo coherente",
+      "Sistema para pedir reseñas",
+      "Respuestas humanas",
+      "Seguimiento simple",
+      "Mejora de reputación local",
     ],
     gradient: "from-yellow-500 to-orange-500",
   },
   {
     id: "local-branding",
-    title: "Branding local",
-    shortTitle: "Branding",
+    title: "Tener una identidad con tonada local",
+    shortTitle: "Branding local",
     description:
-      "Ordenamos nombre, tono, colores, mensajes y detalles visuales para que tu negocio tenga identidad propia.",
+      "Ordenamos nombre, tono, colores, mensajes y detalles visuales para que tu negocio sea más recordable.",
     problem:
-      "Muchos negocios se ven parecidos y cuesta recordar cual era cual.",
+      "Muchos lugares se ven parecidos y cuesta recordar cuál era cuál.",
     result:
-      "Una presencia con personalidad, más reconocible y más conectada con Punilla.",
+      "Una presencia más propia, más humana y más conectada con Punilla.",
     icon: Store,
     features: [
       "Tono de marca",
       "Mensajes principales",
       "Identidad visual simple",
-      "Uso en redes y web",
+      "Uso en redes, mapa y web",
     ],
     gradient: "from-emerald-600 to-green-500",
   },
   {
     id: "visual-signage",
-    title: "Carteleria y redes visuales",
+    title: "Unificar cartelería, redes y mapa",
     shortTitle: "Visuales",
     description:
       "Adaptamos piezas para cartel, redes, WhatsApp y Google para que todo cuente la misma historia.",
@@ -235,7 +197,7 @@ export const services: Service[] = [
       "Un recorrido más claro desde la ruta, el mapa, Instagram o WhatsApp.",
     icon: Megaphone,
     features: [
-      "Piezas para promos",
+      "Piezas para promociones",
       "Visuales para WhatsApp",
       "Destacados de Instagram",
       "Coherencia de marca",

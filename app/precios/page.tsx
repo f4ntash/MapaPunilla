@@ -7,12 +7,14 @@ import { AutomationPlans } from "@/components/pricing/automation-plans"
 import Link from "next/link"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Rutas digitales y automatizaciones para negocios de Punilla",
+  title: "Planes y rutas para aparecer en Mapa Punilla",
   description:
-    "Rutas de visibilidad, reservas y automatizaciones simples para cabañas, hoteles, restaurantes y negocios turísticos del Valle de Punilla.",
+    "Formas de aparecer en Mapa Punilla y rutas de visibilidad local para cabañas, hoteles, restaurantes y negocios turísticos del Valle de Punilla.",
   path: "/precios",
   keywords: [
+    "planes Mapa Punilla",
     "rutas digitales Punilla",
+    "negocios turísticos Punilla",
     "automatizaciones para negocios turísticos",
     "marketing turístico Punilla",
     "marketing para cabañas en Punilla",

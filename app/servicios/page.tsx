@@ -6,13 +6,16 @@ import { ServicesCTA } from "@/components/services/services-cta"
 import Link from "next/link"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Herramientas digitales para negocios turísticos de Punilla",
+  title: "Servicios para aparecer mejor en Google Maps, WhatsApp y Mapa Punilla",
   description:
-    "Herramientas para que cabañas, hoteles, restaurantes y negocios locales del Valle de Punilla sean más fáciles de descubrir: Google Maps, redes, fotos, webs y WhatsApp.",
+    "Herramientas para que cabañas, hoteles, restaurantes y negocios turísticos de Punilla sean más fáciles de descubrir: Google Maps, WhatsApp, contenido, fotos, webs simples y visibilidad local.",
   path: "/servicios",
   keywords: [
     "herramientas digitales Punilla",
     "marketing turístico Punilla",
+    "Google Maps negocios",
+    "negocios turísticos Punilla",
+    "turismo Punilla",
     "seo local Punilla",
     "whatsapp business hoteles",
     "páginas web para cabañas",

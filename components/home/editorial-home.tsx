@@ -12,11 +12,13 @@ import {
   Navigation,
   Route,
   Search,
+  Sparkles,
 } from "lucide-react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { config } from "@/lib/config"
 import { automationPlans, pricingPlans } from "@/data/pricing"
+import { appearanceOptions, mapBusinesses, mapStats } from "@/data/map-businesses"
 
 const places = [
   { name: "Villa Carlos Paz", x: "18%", y: "70%" },
@@ -212,6 +214,66 @@ export function EditorialHome() {
         </div>
       </section>
 
+
+      <section className="bg-[#fff9ef] py-20 md:py-28">
+        <div className="container">
+          <div className="mb-10 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+            <div>
+              <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-[#d97732]">Nuestro mapa</p>
+              <h2 className="font-serif text-4xl font-semibold leading-tight text-[#1e1a16] md:text-6xl">
+                Negocios turísticos del valle que vale la pena descubrir
+              </h2>
+            </div>
+            <div className="space-y-5 text-lg leading-8 text-[#4a3428]">
+              <p>
+                No queremos ser otra agencia más. Queremos construir el lugar donde turistas, vecinos y negocios descubren Punilla.
+              </p>
+              <div className="grid grid-cols-3 gap-3">
+                {[
+                  ["Localidades", mapStats.locations],
+                  ["Categorías", mapStats.categories],
+                  ["Fundadores", mapStats.founders],
+                ].map(([label, value]) => (
+                  <div key={label} className="rounded-2xl border border-[#4a3428]/15 bg-[#f5ebdd] p-4 text-center">
+                    <p className="font-serif text-3xl font-semibold text-[#1e1a16]">{value}</p>
+                    <p className="mt-1 text-[0.65rem] font-bold uppercase tracking-[0.14em] text-[#4a3428]">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {mapBusinesses.slice(0, 3).map((business) => (
+              <article key={business.id} className="rounded-[1.5rem] border border-[#4a3428]/15 bg-[#f5ebdd] p-5 shadow-sm">
+                <div className="mb-5 flex items-center justify-between gap-3">
+                  <span className="rounded-full bg-[#2f5d3a] px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[#fff9ef]">{business.category}</span>
+                  {business.founder && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-[#facc15] px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[#1e1a16]">
+                      <Sparkles className="h-3 w-3" aria-hidden="true" />
+                      Fundador
+                    </span>
+                  )}
+                </div>
+                <h3 className="font-serif text-3xl font-semibold text-[#1e1a16]">{business.name}</h3>
+                <p className="mt-2 text-sm font-bold text-[#d97732]">{business.location}</p>
+                <p className="mt-4 leading-7 text-[#4a3428]">{business.description}</p>
+              </article>
+            ))}
+          </div>
+          <div className="mt-8 flex flex-col items-start justify-between gap-4 rounded-[1.5rem] bg-[#1e1a16] p-6 text-[#fff9ef] md:flex-row md:items-center">
+            <p className="max-w-2xl text-lg leading-8">
+              Estamos armando el primer mapa digital de negocios turísticos de Punilla. Los primeros negocios fundadores entran destacados durante el lanzamiento.
+            </p>
+            <Link href="/nuestro-mapa">
+              <Button className="h-12 rounded-full bg-[#facc15] px-6 font-bold text-[#1e1a16] hover:bg-[#f5b51b]">
+                Ver nuestro mapa
+                <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="relative overflow-hidden bg-[#1e1a16] py-20 text-[#fff9ef] md:py-28">
         <Texture />
         <div className="container relative z-10 grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
@@ -388,6 +450,26 @@ export function EditorialHome() {
                 {route.label}
                 <ArrowRight className="mt-4 h-4 w-4 text-[#d97732] transition group-hover:translate-x-1" aria-hidden="true" />
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#fff9ef] py-18 md:py-24">
+        <div className="container">
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-[#d97732]">Formas de aparecer</p>
+            <h2 className="font-serif text-4xl font-semibold leading-tight text-[#1e1a16] md:text-5xl">
+              Mapa Punilla empieza con fichas, historias y rutas de visibilidad
+            </h2>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {appearanceOptions.map((option) => (
+              <article key={option.title} className="rounded-[1.5rem] border border-[#4a3428]/15 bg-[#f5ebdd] p-5">
+                <span className="rounded-full bg-[#1e1a16] px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[#facc15]">{option.badge}</span>
+                <h3 className="mt-5 font-serif text-2xl font-semibold text-[#1e1a16]">{option.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-[#4a3428]">{option.description}</p>
+              </article>
             ))}
           </div>
         </div>
