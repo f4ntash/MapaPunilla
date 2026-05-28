@@ -23,10 +23,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Mapa Punilla | Marketing Digital para Negocios Turísticos",
+    default: "Mapa Punilla | Marketing turístico, Google Maps y negocios locales",
     template: "%s | Mapa Punilla",
   },
-  description: config.site.description,
+  description:
+    "Ayudamos a cabañas, hoteles, restaurantes y emprendimientos turísticos de Punilla a ser más fáciles de encontrar en Google, Maps, Instagram y WhatsApp.",
   keywords: [
     "mapa punilla",
     "mapapunilla",
@@ -67,18 +68,23 @@ export const metadata: Metadata = {
   creator: "Mapa Punilla",
   publisher: "Mapa Punilla",
   metadataBase: new URL(config.site.url),
+  alternates: {
+    canonical: config.site.url,
+  },
   openGraph: {
     type: "website",
     locale: "es_AR",
     siteName: config.site.name,
-    title: `${config.site.name} | Marketing Digital para Negocios Turísticos`,
-    description: config.site.description,
+    title: "Mapa Punilla | Marketing turístico, Google Maps y negocios locales",
+    description:
+      "El mapa digital del turismo en Punilla: visibilidad local, Google Maps, WhatsApp y rutas digitales para negocios turísticos.",
     url: config.site.url,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${config.site.name} | Marketing Digital para Negocios Turísticos`,
-    description: config.site.description,
+    title: "Mapa Punilla | Marketing turístico, Google Maps y negocios locales",
+    description:
+      "Ayudamos a negocios turísticos de Punilla a ser más fáciles de encontrar y contactar.",
   },
   robots: {
     index: true,
@@ -125,16 +131,10 @@ const jsonLd = {
       telephone: config.phone,
       email: config.email,
       logo: `${config.site.url}/favicon.ico`,
-      areaServed: config.zones.map((z) => ({
-        "@type": "City",
-        name: z,
-      })),
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Villa Carlos Paz",
-        addressRegion: "Córdoba",
-        addressCountry: "AR",
-      },
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "Valle de Punilla, Córdoba, Argentina" },
+        ...config.zones.map((z) => ({ "@type": "City", name: z })),
+      ],
       contactPoint: {
         "@type": "ContactPoint",
         telephone: config.phone,
@@ -155,13 +155,7 @@ const jsonLd = {
       url: config.site.url,
       telephone: config.phone,
       email: config.email,
-      areaServed: config.zones,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Villa Carlos Paz",
-        addressRegion: "Córdoba",
-        addressCountry: "AR",
-      },
+      areaServed: ["Valle de Punilla, Córdoba, Argentina", ...config.zones],
       openingHours: "Mo-Fr 09:00-18:00",
       priceRange: "$$",
     },
@@ -196,6 +190,18 @@ const jsonLd = {
         "Automatizamos la atención al cliente por WhatsApp para negocios turísticos.",
       category: "Automatización",
       audience: { "@type": "Audience", audienceType: "Negocios turísticos" },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${config.site.url}/#breadcrumbs`,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Inicio",
+          item: config.site.url,
+        },
+      ],
     },
   ],
 }

@@ -12,6 +12,108 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "mejorar-google-maps-cabanas-punilla",
+    title: "Cómo mejorar tu ficha de Google Maps si tenés cabañas en Punilla",
+    description:
+      "Una guía simple para ordenar fotos, horarios, servicios, ubicación, reseñas y WhatsApp en la ficha de Google de una cabaña o alojamiento turístico.",
+    content: [
+      "Si tenés cabañas en Punilla, tu ficha de Google Maps suele ser una de las primeras pantallas que ve el turista. Antes de escribirte, mira fotos, reseñas, ubicación, horarios, servicios y si hay una forma clara de consultar.",
+      "Lo primero es revisar que los datos básicos estén completos: nombre, categoría correcta, teléfono, WhatsApp, sitio web si tenés, horarios y ubicación. Parece simple, pero muchos perfiles pierden consultas por información vieja o incompleta.",
+      "Después vienen las fotos. No hace falta tener una producción enorme para empezar, pero sí mostrar lo que la persona necesita decidir: exterior, habitaciones, baño, cocina, pileta, espacios comunes, vista, ingreso y detalles de servicios.",
+      "También conviene responder reseñas con un tono humano. Google entiende actividad y la persona que compara alojamientos ve que hay alguien atento detrás del negocio.",
+      "La clave es que la ficha no sea solo una dirección en el mapa. Tiene que funcionar como una pequeña guía de confianza para que el turista entienda rápido si tu lugar es para él.",
+    ],
+    publishedTime: "2026-05-20T10:00:00Z",
+    author: "Equipo Mapa Punilla",
+    tags: ["Google Maps", "Cabañas", "Punilla"],
+    readTime: "4 min",
+  },
+  {
+    slug: "fotos-para-recibir-mas-consultas",
+    title: "Qué fotos subir para recibir más consultas turísticas",
+    description:
+      "Ideas concretas de fotos para hoteles, cabañas, restaurantes y negocios turísticos que quieren generar más confianza en Google Maps, Instagram y WhatsApp.",
+    content: [
+      "Las fotos no son decoración: son una parte central de la decisión. En turismo, la persona quiere imaginar cómo va a ser la experiencia antes de escribir o reservar.",
+      "Para alojamientos, conviene mostrar ambientes completos y detalles útiles: cama, baño, cocina, vista, parrilla, pileta, estacionamiento y acceso. Para restaurantes, platos reales, salón, fachada, carta y mesas con buena luz.",
+      "Evitá subir solo fotos demasiado cerradas o oscuras. Si el cliente no entiende el espacio, aparece la duda. Y cuando aparece la duda, muchas veces sigue mirando otro lugar.",
+      "También es importante actualizar imágenes por temporada. Una pileta en verano, una mesa cálida en invierno o una fachada bien iluminada pueden cambiar la percepción del negocio.",
+      "La regla simple: cada foto debería responder una pregunta que el cliente se hace antes de consultar.",
+    ],
+    publishedTime: "2026-05-18T10:00:00Z",
+    author: "Equipo Mapa Punilla",
+    tags: ["Fotografía", "Turismo", "Consultas"],
+    readTime: "3 min",
+  },
+  {
+    slug: "responder-resenas-sin-sonar-automatico",
+    title: "Cómo responder reseñas sin sonar automático",
+    description:
+      "Un método simple para responder reseñas de Google con un tono humano, cercano y útil para negocios turísticos del Valle de Punilla.",
+    content: [
+      "Responder reseñas no es solo educación. También muestra que el negocio está activo, atento y dispuesto a cuidar la experiencia de quien lo visita.",
+      "Una buena respuesta no necesita ser larga. Podés agradecer, mencionar algo específico y dejar una invitación simple. Por ejemplo: gracias por visitar nuestras cabañas en Tanti, nos alegra que hayan disfrutado la vista y los esperamos cuando vuelvan al valle.",
+      "Si la reseña es negativa, conviene responder con calma. No pelear, no negar todo y no copiar una respuesta fría. Reconocer la situación y ofrecer un canal de contacto suele ser más profesional.",
+      "La peor opción es usar siempre la misma frase. Se nota. Y cuando se nota, pierde valor.",
+      "Pensalo como parte de la atención: la reseña también la leen futuros clientes.",
+    ],
+    publishedTime: "2026-05-15T10:00:00Z",
+    author: "Equipo Mapa Punilla",
+    tags: ["Reseñas", "Google Maps", "Confianza"],
+    readTime: "3 min",
+  },
+  {
+    slug: "whatsapp-para-reservas-turisticas",
+    title: "WhatsApp para reservas turísticas: cómo ordenar las consultas",
+    description:
+      "Cómo usar WhatsApp Business para responder mejor disponibilidad, precios, ubicación y preguntas frecuentes en hoteles, cabañas y restaurantes.",
+    content: [
+      "WhatsApp es donde muchas reservas se ganan o se pierden. Si la respuesta llega tarde, incompleta o desordenada, el cliente puede seguir buscando.",
+      "Lo básico es tener un perfil claro: nombre del negocio, rubro, ubicación, horarios, link a Google Maps y una descripción breve. Después, respuestas rápidas para las preguntas que se repiten todos los días.",
+      "Para alojamientos, conviene preparar respuestas sobre disponibilidad, cantidad de personas, fechas, formas de pago, ingreso, egreso y servicios incluidos.",
+      "Para restaurantes, horarios, reservas, ubicación, menú, medios de pago y si aceptan grupos. Todo escrito simple, sin parecer robot.",
+      "Una automatización bien armada no reemplaza la atención humana. Ayuda a que la primera respuesta llegue a tiempo y ordena la conversación.",
+    ],
+    publishedTime: "2026-05-12T10:00:00Z",
+    author: "Equipo Mapa Punilla",
+    tags: ["WhatsApp", "Reservas", "Automatización"],
+    readTime: "4 min",
+  },
+  {
+    slug: "errores-perfiles-hoteles-chicos",
+    title: "Errores comunes en perfiles digitales de hoteles chicos",
+    description:
+      "Errores frecuentes en Google Maps, Instagram y páginas simples que hacen que hoteles chicos parezcan menos confiables de lo que realmente son.",
+    content: [
+      "Muchos hoteles chicos tienen buen servicio, buena ubicación y atención cercana, pero su presencia digital no transmite lo mismo. Esa diferencia cuesta consultas.",
+      "Un error común es tener información distinta en cada canal: un horario en Google, otro en Instagram, un teléfono viejo en una publicación y ningún link claro a WhatsApp.",
+      "Otro problema son las fotos. Si solo hay imágenes viejas, oscuras o subidas por huéspedes, el hotel puede parecer descuidado aunque esté bien mantenido.",
+      "También falta responder preguntas simples: dónde está, qué incluye, si tiene cochera, desayuno, calefacción, aire, medios de pago o cómo reservar.",
+      "No se trata de hacer marketing complicado. Se trata de que el turista entienda rápido y confíe.",
+    ],
+    publishedTime: "2026-05-09T10:00:00Z",
+    author: "Equipo Mapa Punilla",
+    tags: ["Hoteles", "SEO local", "Confianza"],
+    readTime: "4 min",
+  },
+  {
+    slug: "preparar-negocio-temporada-alta-punilla",
+    title: "Cómo preparar tu negocio para temporada alta en Punilla",
+    description:
+      "Checklist simple para revisar Google Maps, fotos, WhatsApp, reseñas, horarios y mensajes antes de temporada alta en el Valle de Punilla.",
+    content: [
+      "La temporada alta no empieza el día que llega la gente. Empieza antes, cuando turistas y familias comparan opciones desde el celular.",
+      "Revisá tu ficha de Google Maps: horarios especiales, teléfono, ubicación, fotos recientes, servicios y link de contacto. Si algo está viejo, corregilo antes de que empiecen las consultas fuertes.",
+      "Ordená WhatsApp con respuestas rápidas para precios, disponibilidad, horarios, menú, ubicación y formas de reserva. En temporada, cada minuto cuenta.",
+      "Pedí reseñas a clientes recientes y respondé las que ya tenés pendientes. La confianza acumulada ayuda mucho cuando alguien compara varias opciones.",
+      "También conviene preparar publicaciones simples para Instagram y una página o link claro donde la gente entienda qué ofrecés. Menos vueltas, más consultas.",
+    ],
+    publishedTime: "2026-05-06T10:00:00Z",
+    author: "Equipo Mapa Punilla",
+    tags: ["Temporada alta", "Punilla", "Marketing turístico"],
+    readTime: "4 min",
+  },
+  {
     slug: "google-maps-para-turismo-punilla",
     title: "Cómo aparecer en Google Maps para atraer más turistas en Punilla",
     description:

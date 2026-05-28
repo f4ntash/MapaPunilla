@@ -126,7 +126,7 @@ export function localServiceJsonLd(service: {
     areaServed: service.areaServed || config.zones,
     audience: {
       "@type": "Audience",
-      audienceType: "Turistas",
+      audienceType: "Negocios turísticos",
     },
   }
 }
@@ -138,6 +138,11 @@ export const siteMapPages = [
   { path: "/nosotros", priority: 0.7, changeFreq: "monthly" as const },
   { path: "/contacto", priority: 0.6, changeFreq: "monthly" as const },
   { path: "/blog", priority: 0.7, changeFreq: "weekly" as const },
+  { path: "/nuestro-mapa", priority: 0.85, changeFreq: "monthly" as const },
+  { path: "/google-maps-negocios-punilla", priority: 0.85, changeFreq: "monthly" as const },
+  { path: "/marketing-turistico-punilla", priority: 0.85, changeFreq: "monthly" as const },
+  { path: "/marketing-cabanas-punilla", priority: 0.85, changeFreq: "monthly" as const },
+  { path: "/automatizacion-whatsapp-turismo", priority: 0.85, changeFreq: "monthly" as const },
   {
     path: "/servicios/google-maps-villa-carlos-paz",
     priority: 0.8,

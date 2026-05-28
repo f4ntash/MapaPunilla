@@ -5,7 +5,7 @@ import { blogArticles } from "@/data/blog"
 import { buildMetadata } from "@/lib/seo"
 
 const meta = {
-  title: "Blog de marketing para turismo en Punilla",
+  title: "Últimas guías de marketing turístico en Punilla",
   description:
     "Consejos prácticos de marketing digital para hoteles, cabañas y restaurantes del Valle de Punilla. Google Maps, SEO local, WhatsApp Business y más.",
   path: "/blog",
@@ -27,11 +27,11 @@ export default function BlogPage() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-              Blog de marketing para turismo en Punilla
+              Últimas guías para negocios turísticos de Punilla
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Consejos prácticos para que tu hotel, cabaña o restaurante en el
-              Valle de Punilla atraiga más clientes digitalmente.
+              Consejos prácticos y actuales para que tu hotel, cabaña o restaurante
+              del valle sea más fácil de encontrar, entender y contactar.
             </p>
           </div>
         </div>

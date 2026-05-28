@@ -70,6 +70,14 @@ const tools = [
   "Carteleria y redes visuales",
 ]
 
+const seoRoutes = [
+  { label: "Google Maps para negocios", href: "/google-maps-negocios-punilla" },
+  { label: "Marketing turístico en Punilla", href: "/marketing-turistico-punilla" },
+  { label: "Marketing para cabañas", href: "/marketing-cabanas-punilla" },
+  { label: "WhatsApp para turismo", href: "/automatizacion-whatsapp-turismo" },
+  { label: "Nuestro mapa", href: "/nuestro-mapa" },
+]
+
 function Texture() {
   return (
     <>
@@ -354,6 +362,32 @@ export function EditorialHome() {
               >
                 {tool}
               </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f5ebdd] py-18 md:py-24">
+        <div className="container grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div>
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-[#2f5d3a]">Guías de visibilidad</p>
+            <h2 className="font-serif text-4xl font-semibold leading-tight text-[#1e1a16] md:text-5xl">
+              Caminos para aparecer mejor cuando te buscan
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-[#4a3428]">
+              Google Maps, marketing turístico, cabañas y automatizaciones explicados simple, con mirada local.
+            </p>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {seoRoutes.map((route) => (
+              <Link
+                key={route.href}
+                href={route.href}
+                className="group rounded-2xl border border-[#4a3428]/15 bg-[#fff9ef] p-5 font-bold text-[#1e1a16] transition hover:-translate-y-1 hover:shadow-lg hover:shadow-[#4a3428]/10"
+              >
+                {route.label}
+                <ArrowRight className="mt-4 h-4 w-4 text-[#d97732] transition group-hover:translate-x-1" aria-hidden="true" />
+              </Link>
             ))}
           </div>
         </div>

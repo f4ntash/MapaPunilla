@@ -2,14 +2,17 @@ import { EditorialHome } from "@/components/home/editorial-home"
 import { buildMetadata } from "@/lib/seo"
 
 export const metadata = buildMetadata({
-  title: "Mapa Punilla | El mapa digital del turismo en Punilla",
+  title: "Mapa Punilla | Marketing turístico, Google Maps y negocios locales",
   description:
-    "Una guía digital para que cabañas, hoteles, restaurantes y negocios turísticos del Valle de Punilla sean más fáciles de descubrir, entender y contactar.",
+    "Ayudamos a cabañas, hoteles, restaurantes y emprendimientos turísticos de Punilla a ser más fáciles de encontrar en Google, Maps, Instagram y WhatsApp.",
   path: "/",
   keywords: [
     "Mapa Punilla",
     "turismo en Punilla",
     "guía digital Punilla",
+    "marketing turístico Punilla",
+    "Google Maps negocios Punilla",
+    "automatización WhatsApp turismo",
     "negocios turísticos en Punilla",
     "cabañas en Punilla",
     "hoteles en Punilla",
