@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { MapPinned, MessageCircle, Route, Sparkles } from "lucide-react"
 import { MapExplorer } from "@/components/map/map-explorer"
+import { InstagramReadyFormats, PlatformAuthority } from "@/components/platform/platform-authority"
 import { appearanceOptions, mapBusinesses, mapStats } from "@/data/map-businesses"
 import { buildMetadata } from "@/lib/seo"
 import { config } from "@/lib/config"
@@ -105,6 +106,8 @@ export default function NuestroMapaPage() {
 
       <MapExplorer />
 
+      <PlatformAuthority />
+
       <section className="bg-[#fff9ef] py-18 md:py-24">
         <div className="container grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
@@ -131,6 +134,8 @@ export default function NuestroMapaPage() {
           </div>
         </div>
       </section>
+
+      <InstagramReadyFormats />
 
       <section className="bg-[#f5ebdd] py-18 md:py-24">
         <div className="container">

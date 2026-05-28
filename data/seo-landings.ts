@@ -153,6 +153,98 @@ export const seoLandings: SeoLanding[] = [
     ],
   },
   {
+    slug: "marketing-restaurantes-punilla",
+    title: "Marketing para restaurantes en Punilla",
+    metaTitle: "Marketing para restaurantes en Punilla",
+    description:
+      "Google Maps, fotos, reseñas, contenido e Instagram para restaurantes, bares y cafeterías del Valle de Punilla que quieren recibir más consultas y reservas.",
+    eyebrow: "Gastronomía local",
+    intro:
+      "Cuando un turista busca dónde comer en Punilla, decide rápido: fotos del lugar, platos reales, horarios, ubicación, reseñas y si puede escribir o reservar sin vueltas.",
+    intent:
+      "Ordenamos la presencia digital del restaurante para que sea más fácil descubrirlo, entender qué ofrece y llegar desde Google Maps, Instagram o WhatsApp.",
+    audience: [
+      "Restaurantes familiares en Villa Carlos Paz, Cosquín y La Falda",
+      "Bares, cafeterías y espacios de noche",
+      "Parrillas, casas de comida y propuestas serranas",
+      "Locales que dependen de temporada, fines largos y turistas de paso",
+    ],
+    work: [
+      "Google Maps con horarios, categorías, fotos y llamados claros",
+      "Fotos de platos, salón, fachada y experiencia real",
+      "Mensajes para reservas, ubicación, carta y grupos",
+      "Contenido que la gente pueda guardar o compartir",
+      "Reseñas respondidas con tono humano y local",
+    ],
+    proof: [
+      "El turista no quiere adivinar: quiere entender rápido si tu lugar es para él.",
+      "Menos dudas sobre horarios, ubicación y reservas.",
+      "Más claro en Google Maps, más fácil en WhatsApp.",
+    ],
+    faqs: [
+      {
+        question: "¿Sirve si ya publico en Instagram?",
+        answer:
+          "Sí, pero Instagram solo no alcanza. Lo conectamos con Google Maps, WhatsApp, reseñas y mensajes claros para que la gente pueda pasar de mirar a consultar.",
+      },
+      {
+        question: "¿Necesito fotos profesionales?",
+        answer:
+          "Ayudan mucho, pero también podemos empezar ordenando qué fotos faltan y cómo mostrar mejor platos, fachada, salón y ambiente.",
+      },
+    ],
+    related: [
+      { label: "Ver servicios", href: "/servicios" },
+      { label: "Sumar mi restaurante al mapa", href: "/nuestro-mapa" },
+    ],
+  },
+  {
+    slug: "marketing-hoteles-punilla",
+    title: "Marketing para hoteles en Punilla",
+    metaTitle: "Marketing para hoteles en Punilla",
+    description:
+      "Visibilidad local, Google Maps, reservas directas, WhatsApp y contenido para hoteles chicos y alojamientos del Valle de Punilla.",
+    eyebrow: "Hoteles y alojamientos",
+    intro:
+      "Muchos hoteles chicos tienen buena atención, ubicación y experiencia, pero online se ven incompletos. Ahí se pierden consultas antes de que alguien pregunte disponibilidad.",
+    intent:
+      "Hacemos que tu hotel se entienda mejor: dónde está, qué incluye, cómo reservar, por qué confiar y cómo escribir sin depender solo de plataformas con comisión.",
+    audience: [
+      "Hoteles chicos y hosterías de Punilla",
+      "Alojamientos familiares en Villa Carlos Paz, La Falda y Cosquín",
+      "Posadas, apart hoteles y complejos con habitaciones",
+      "Negocios que quieren más consultas directas y menos dependencia de intermediarios",
+    ],
+    work: [
+      "Ficha de Google Maps más completa y confiable",
+      "Mensajes claros sobre habitaciones, servicios, cochera, desayuno y ubicación",
+      "WhatsApp preparado para disponibilidad, tarifas y reservas",
+      "Landing simple para recibir consultas directas",
+      "Contenido y reseñas para sostener confianza en baja y alta temporada",
+    ],
+    proof: [
+      "Dependencia de Booking: menos control, menos margen y menos relación directa.",
+      "Una presencia clara reduce preguntas repetidas.",
+      "El hotel se vende mejor cuando la información está ordenada.",
+    ],
+    faqs: [
+      {
+        question: "¿Esto reemplaza Booking?",
+        answer:
+          "No necesariamente. La idea es sumar caminos propios de consulta y reserva directa para depender menos de intermediarios.",
+      },
+      {
+        question: "¿Sirve en baja temporada?",
+        answer:
+          "Sí. En baja temporada conviene trabajar Google Maps, reseñas, fotos y contenido para llegar mejor preparado a los momentos de más demanda.",
+      },
+    ],
+    related: [
+      { label: "Reservas directas", href: "/servicios/reservas-directas-cabanas" },
+      { label: "WhatsApp para hoteles", href: "/servicios/whatsapp-business-hoteles" },
+    ],
+  },
+  {
     slug: "automatizacion-whatsapp-turismo",
     title: "Automatización de WhatsApp para turismo",
     metaTitle: "Automatización WhatsApp para turismo",

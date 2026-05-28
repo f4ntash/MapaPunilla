@@ -35,6 +35,8 @@ export default function PreciosPage() {
           {[
             ["Ruta Google Maps", "/google-maps-negocios-punilla"],
             ["Ruta cabañas y reservas", "/marketing-cabanas-punilla"],
+            ["Ruta hoteles", "/marketing-hoteles-punilla"],
+            ["Ruta restaurantes", "/marketing-restaurantes-punilla"],
             ["Ruta WhatsApp automático", "/automatizacion-whatsapp-turismo"],
           ].map(([label, href]) => (
             <Link

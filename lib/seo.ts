@@ -142,6 +142,8 @@ export const siteMapPages = [
   { path: "/google-maps-negocios-punilla", priority: 0.85, changeFreq: "monthly" as const },
   { path: "/marketing-turistico-punilla", priority: 0.85, changeFreq: "monthly" as const },
   { path: "/marketing-cabanas-punilla", priority: 0.85, changeFreq: "monthly" as const },
+  { path: "/marketing-restaurantes-punilla", priority: 0.85, changeFreq: "monthly" as const },
+  { path: "/marketing-hoteles-punilla", priority: 0.85, changeFreq: "monthly" as const },
   { path: "/automatizacion-whatsapp-turismo", priority: 0.85, changeFreq: "monthly" as const },
   {
     path: "/servicios/google-maps-villa-carlos-paz",

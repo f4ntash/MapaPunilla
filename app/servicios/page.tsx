@@ -41,6 +41,8 @@ export default function ServiciosPage() {
               ["Google Maps para negocios", "/google-maps-negocios-punilla"],
               ["Marketing turístico", "/marketing-turistico-punilla"],
               ["Marketing para cabañas", "/marketing-cabanas-punilla"],
+              ["Marketing para hoteles", "/marketing-hoteles-punilla"],
+              ["Marketing para restaurantes", "/marketing-restaurantes-punilla"],
               ["WhatsApp para turismo", "/automatizacion-whatsapp-turismo"],
             ].map(([label, href]) => (
               <Link

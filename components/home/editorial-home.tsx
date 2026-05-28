@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button"
 import { config } from "@/lib/config"
 import { automationPlans, pricingPlans } from "@/data/pricing"
 import { appearanceOptions, mapBusinesses, mapStats } from "@/data/map-businesses"
+import { InstagramReadyFormats, PlatformAuthority } from "@/components/platform/platform-authority"
 
 const places = [
   { name: "Villa Carlos Paz", x: "18%", y: "70%" },
@@ -76,6 +77,8 @@ const seoRoutes = [
   { label: "Google Maps para negocios", href: "/google-maps-negocios-punilla" },
   { label: "Marketing turístico en Punilla", href: "/marketing-turistico-punilla" },
   { label: "Marketing para cabañas", href: "/marketing-cabanas-punilla" },
+  { label: "Marketing para hoteles", href: "/marketing-hoteles-punilla" },
+  { label: "Marketing para restaurantes", href: "/marketing-restaurantes-punilla" },
   { label: "WhatsApp para turismo", href: "/automatizacion-whatsapp-turismo" },
   { label: "Nuestro mapa", href: "/nuestro-mapa" },
 ]
@@ -317,6 +320,8 @@ export function EditorialHome() {
         </div>
       </section>
 
+      <PlatformAuthority />
+
       <section className="bg-[#fff9ef] py-20 md:py-28">
         <div className="container">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
@@ -474,6 +479,8 @@ export function EditorialHome() {
           </div>
         </div>
       </section>
+
+      <InstagramReadyFormats />
 
       <section className="relative overflow-hidden bg-[#1e1a16] py-20 text-[#fff9ef] md:py-28">
         <Texture />
